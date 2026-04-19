@@ -6,6 +6,23 @@ import torch
 
 from circuit_tracer_import import Feature, ReplacementModel
 
+
+def _first_content_token_id(model: ReplacementModel, text: str) -> int:
+    token_ids = model.tokenizer.encode(text)
+    if not token_ids:
+        raise ValueError(f"Tokenizer produced empty tokenization for text: {text}")
+
+    special_ids = set(getattr(model.tokenizer, "all_special_ids", []))
+    for token_id in token_ids:
+        if token_id not in special_ids:
+            return token_id
+
+    # Fallback when tokenizer only returns special tokens with defaults.
+    plain_ids = model.tokenizer.encode(text, add_special_tokens=False)
+    if not plain_ids:
+        raise ValueError(f"Tokenizer produced only special tokens for text: {text}")
+    return plain_ids[0]
+
 def ablation(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: str, alpha: float=0) -> list[tuple[int, int, int, torch.Tensor]]:
     if lang not in supernode_dict.keys():
         raise KeyError(f'{lang} is not a valid intervention language.')
@@ -50,7 +67,7 @@ def get_best_base(logits: torch.Tensor, targets: list[str], model: ReplacementMo
     _, indices = torch.sort(last_logits, dim=-1, descending=True)
     ranks = []
     for target in targets:
-        token = model.tokenizer.encode(target)[1]
+        token = _first_content_token_id(model, target)
         mask = (indices == token)
         rank = torch.argmax(mask.int(), dim=-1)
         rank = rank.item() if isinstance(rank, torch.Tensor) else rank
@@ -63,7 +80,7 @@ def get_best_rank(logits: torch.Tensor, targets: list[str], model: ReplacementMo
     _, indices = torch.sort(last_logits, dim=-1, descending=True)
     ranks = []
     for target in targets:
-        token = model.tokenizer.encode(target)[1]
+        token = _first_content_token_id(model, target)
         mask = (indices == token)
         rank = torch.argmax(mask.int(), dim=-1)
         rank = rank.item() if isinstance(rank, torch.Tensor) else rank
@@ -80,8 +97,8 @@ def logit_diff_single(old_logits: torch.Tensor, new_logits: torch.Tensor, target
     o_logits = old_logits.squeeze(0)[-1]
     n_logits = new_logits.squeeze(0)[-1]
 
-    s = model.tokenizer.encode(base)[1]
-    t = model.tokenizer.encode(target)[1]
+    s = _first_content_token_id(model, base)
+    t = _first_content_token_id(model, target)
 
     o_diff = o_logits[t] - o_logits[s]
     n_diff = n_logits[t] - n_logits[s]
