@@ -1,0 +1,30 @@
+{
+  "feature_set_id": "AnnSel__selection_threshold__threshold_0.25",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/selected_features/AnnSel/selection_threshold_0.25.json",
+  "method": "AnnSel",
+  "sweep": "selection_threshold",
+  "hyperparameters": {
+    "threshold": 0.25
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "feature-intervention"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 38514,
+      "mean_delta_logit_on_language": 0.9877998909487459,
+      "mean_delta_logit_off_language": -0.8446219856921332,
+      "mean_abs_delta_logit_on_language": 1.4546982915303526
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 2058,
+      "mean_delta_logprob_on_language": 1.4146720179084207,
+      "mean_delta_logprob_off_language": -5.02610462214671,
+      "mean_abs_delta_logprob_on_language": 2.01264611393416
+    }
+  }
+}

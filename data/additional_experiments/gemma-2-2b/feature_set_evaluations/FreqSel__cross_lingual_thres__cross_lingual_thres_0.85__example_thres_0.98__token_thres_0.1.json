@@ -1,0 +1,32 @@
+{
+  "feature_set_id": "FreqSel__cross_lingual_thres__cross_lingual_thres_0.85__example_thres_0.98__token_thres_0.1",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/selected_features/FreqSel/cross_lingual_thres__cross_lingual_thres_0.85__example_thres_0.98__token_thres_0.1.json",
+  "method": "FreqSel",
+  "sweep": "cross_lingual_thres",
+  "hyperparameters": {
+    "example_thres": 0.98,
+    "cross_lingual_thres": 0.85,
+    "token_thres": 0.1
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "distractor ablation"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 314531,
+      "mean_delta_logit_on_language": -0.031727627129005356,
+      "mean_delta_logit_off_language": 0.5535540527794726,
+      "mean_abs_delta_logit_on_language": 0.3332853040707288
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 16807,
+      "mean_delta_logprob_on_language": -3.7613054169857816,
+      "mean_delta_logprob_off_language": -0.5988936619213782,
+      "mean_abs_delta_logprob_on_language": 4.63237451206193
+    }
+  }
+}

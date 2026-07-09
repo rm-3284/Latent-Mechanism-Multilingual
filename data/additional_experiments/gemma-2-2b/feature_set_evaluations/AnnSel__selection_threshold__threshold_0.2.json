@@ -1,0 +1,30 @@
+{
+  "feature_set_id": "AnnSel__selection_threshold__threshold_0.2",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/selected_features/AnnSel/selection_threshold_threshold_0.2.json",
+  "method": "AnnSel",
+  "sweep": "selection_threshold",
+  "hyperparameters": {
+    "threshold": 0.2
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "distractor ablation"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 314531,
+      "mean_delta_logit_on_language": 0.1797976452766306,
+      "mean_delta_logit_off_language": 0.6165009050061722,
+      "mean_abs_delta_logit_on_language": 0.27809999342119446
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 16807,
+      "mean_delta_logprob_on_language": -1.4188922094037661,
+      "mean_delta_logprob_off_language": 0.08722672296301881,
+      "mean_abs_delta_logprob_on_language": 1.9571211241722504
+    }
+  }
+}

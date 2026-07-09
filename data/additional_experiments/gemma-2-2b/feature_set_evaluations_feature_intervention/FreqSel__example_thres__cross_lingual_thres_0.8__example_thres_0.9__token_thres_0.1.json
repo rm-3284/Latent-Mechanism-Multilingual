@@ -1,0 +1,32 @@
+{
+  "feature_set_id": "FreqSel__example_thres__cross_lingual_thres_0.8__example_thres_0.9__token_thres_0.1",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/selected_features/FreqSel/example_thres__cross_lingual_thres_0.8__example_thres_0.9__token_thres_0.1.json",
+  "method": "FreqSel",
+  "sweep": "example_thres",
+  "hyperparameters": {
+    "example_thres": 0.9,
+    "cross_lingual_thres": 0.8,
+    "token_thres": 0.1
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "feature-intervention"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 38514,
+      "mean_delta_logit_on_language": -1.768340720561841,
+      "mean_delta_logit_off_language": -4.701948390243329,
+      "mean_abs_delta_logit_on_language": 3.4445436922085153
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 2058,
+      "mean_delta_logprob_on_language": 5.0775067335894315,
+      "mean_delta_logprob_off_language": -12.816106999542168,
+      "mean_abs_delta_logprob_on_language": 7.414613451276507
+    }
+  }
+}

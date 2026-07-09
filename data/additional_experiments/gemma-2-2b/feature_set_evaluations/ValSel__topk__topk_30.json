@@ -1,0 +1,30 @@
+{
+  "feature_set_id": "ValSel__topk__topk_30",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/selected_features/ValSel/topk_30.json",
+  "method": "ValSel",
+  "sweep": "topk",
+  "hyperparameters": {
+    "topk": 30
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "distractor ablation"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 314531,
+      "mean_delta_logit_on_language": 0.6251588899983725,
+      "mean_delta_logit_off_language": 1.4497740104236148,
+      "mean_abs_delta_logit_on_language": 0.9485608042460442
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 16807,
+      "mean_delta_logprob_on_language": -7.2389064180707,
+      "mean_delta_logprob_off_language": -1.8800885915325927,
+      "mean_abs_delta_logprob_on_language": 7.504947911198563
+    }
+  }
+}

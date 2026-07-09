@@ -1,0 +1,30 @@
+{
+  "feature_set_id": "ValSel__topk__topk_150",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/selected_features/ValSel/topk_topk_150.json",
+  "method": "ValSel",
+  "sweep": "topk",
+  "hyperparameters": {
+    "topk": 150
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "feature-intervention"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 38514,
+      "mean_delta_logit_on_language": -2.620669476901865,
+      "mean_delta_logit_off_language": -5.316668428739721,
+      "mean_abs_delta_logit_on_language": 3.884192968359517
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 2058,
+      "mean_delta_logprob_on_language": -6.442283812023344,
+      "mean_delta_logprob_off_language": -20.68884967622303,
+      "mean_abs_delta_logprob_on_language": 18.483470864847405
+    }
+  }
+}
