@@ -1,0 +1,31 @@
+{
+  "feature_set_id": "FreqSel__min_default_counts__budget_mode_min_default_counts__total_features_220",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/budget_matched_features/FreqSel/min_default_counts__budget_mode_min_default_counts__total_features_220.json",
+  "method": "FreqSel",
+  "sweep": "min_default_counts",
+  "hyperparameters": {
+    "budget_mode": "min_default_counts",
+    "total_features": 220
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "amplification"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 314531,
+      "mean_delta_logit_on_language": 1.4641786321091959,
+      "mean_delta_logit_off_language": -1.9798823044035996,
+      "mean_abs_delta_logit_on_language": 2.1195164884383417
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 16807,
+      "mean_delta_logprob_on_language": 4.119680384008748,
+      "mean_delta_logprob_off_language": -3.502437314837571,
+      "mean_abs_delta_logprob_on_language": 4.557081536321231
+    }
+  }
+}

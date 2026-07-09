@@ -1,0 +1,31 @@
+{
+  "feature_set_id": "AnnSel__min_default_counts__budget_mode_min_default_counts__total_features_220",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/budget_matched_features/AnnSel/min_default_counts__budget_mode_min_default_counts__total_features_220.json",
+  "method": "AnnSel",
+  "sweep": "min_default_counts",
+  "hyperparameters": {
+    "budget_mode": "min_default_counts",
+    "total_features": 220
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "distractor ablation"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 314531,
+      "mean_delta_logit_on_language": 0.31845633604173507,
+      "mean_delta_logit_off_language": 0.7401188382398546,
+      "mean_abs_delta_logit_on_language": 0.41739994385520873
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 16807,
+      "mean_delta_logprob_on_language": -1.2782899228198883,
+      "mean_delta_logprob_off_language": 0.11271111362430265,
+      "mean_abs_delta_logprob_on_language": 1.9487229942630004
+    }
+  }
+}
