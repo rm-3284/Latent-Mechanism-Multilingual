@@ -1,0 +1,85 @@
+Experiment,Method,Run,mean,stdev
+original,AnnSel,de,-4.6090625,4.234724700420592
+original,AnnSel,en,1.9596875,2.58404840650096
+original,AnnSel,es,0.0,0.0
+original,AnnSel,fr,-1.8559375,3.417532384663086
+original,AnnSel,ja,-2.1721875,4.189566557667995
+original,AnnSel,ko,-6.3784375,3.4649668689976334
+original,AnnSel,zh,2.601875,2.8813425728462
+original,ValSel,de,-4.6090625,4.234724700420592
+original,ValSel,en,1.9596875,2.58404840650096
+original,ValSel,es,0.0,0.0
+original,ValSel,fr,-1.8559375,3.417532384663086
+original,ValSel,ja,-2.1721875,4.189566557667995
+original,ValSel,ko,-6.3784375,3.4649668689976334
+original,ValSel,zh,2.601875,2.8813425728462
+original,FreqSel,de,-4.6090625,4.234724700420592
+original,FreqSel,en,1.9596875,2.58404840650096
+original,FreqSel,es,0.0,0.0
+original,FreqSel,fr,-1.8559375,3.417532384663086
+original,FreqSel,ja,-2.1721875,4.189566557667995
+original,FreqSel,ko,-6.3784375,3.4649668689976334
+original,FreqSel,zh,2.601875,2.8813425728462
+distractor ablation,AnnSel,de,-4.6103125,4.232138209577806
+distractor ablation,AnnSel,en,2.0690625,2.563686497761928
+distractor ablation,AnnSel,es,0.0,0.0
+distractor ablation,AnnSel,fr,-1.8571875,3.416961874603474
+distractor ablation,AnnSel,ja,-3.4228125,4.361951715766178
+distractor ablation,AnnSel,ko,-6.3784375,3.4649668689976334
+distractor ablation,AnnSel,zh,0.1678125,2.6648263025375045
+distractor ablation,ValSel,de,-4.6271875,4.250713080311355
+distractor ablation,ValSel,en,2.016875,2.611223091234636
+distractor ablation,ValSel,es,0.000625,0.00625
+distractor ablation,ValSel,fr,-1.749375,3.5528732570529193
+distractor ablation,ValSel,ja,-4.7634375,4.888645705102686
+distractor ablation,ValSel,ko,-8.80875,4.265206196834469
+distractor ablation,ValSel,zh,-1.5415625,3.028745043679791
+distractor ablation,FreqSel,de,-4.6103125,4.232138209577806
+distractor ablation,FreqSel,en,1.9475,2.593405340980515
+distractor ablation,FreqSel,es,0.0,0.0
+distractor ablation,FreqSel,fr,-1.8578125,3.418102337757396
+distractor ablation,FreqSel,ja,-2.1734375,4.196760111659579
+distractor ablation,FreqSel,ko,-6.4246875,3.471480619983054
+distractor ablation,FreqSel,zh,0.095625,2.758501765776656
+amplification,AnnSel,de,4.0159375,3.36685176309641
+amplification,AnnSel,en,1.9253125,2.5503410680935987
+amplification,AnnSel,es,0.0428125,0.2331208024915257
+amplification,AnnSel,fr,1.5378125,3.158654933729304
+amplification,AnnSel,ja,8.6221875,3.7915758579493826
+amplification,AnnSel,ko,-5.8653125,3.38043688236077
+amplification,AnnSel,zh,5.8378125,3.009119448278655
+amplification,ValSel,de,0.4803125,3.127478988329607
+amplification,ValSel,en,1.76515625,3.159891587809506
+amplification,ValSel,es,0.03625,0.29638765821031404
+amplification,ValSel,fr,0.53734375,3.500281046362915
+amplification,ValSel,ja,3.66875,3.596349795243432
+amplification,ValSel,ko,-0.4046875,3.5339359003019823
+amplification,ValSel,zh,4.525625,3.071012121661015
+amplification,FreqSel,de,0.245,2.85411731322072
+amplification,FreqSel,en,1.7340625,2.749460084595995
+amplification,FreqSel,es,0.0340625,0.2810954611902648
+amplification,FreqSel,fr,0.890625,3.0627013049691274
+amplification,FreqSel,ja,4.458125,3.5245162399085053
+amplification,FreqSel,ko,-0.02921875,3.4448753344465852
+amplification,FreqSel,zh,5.0090625,2.864296800407915
+feature-intervention,AnnSel,de,-6.6628125,4.271482985973769
+feature-intervention,AnnSel,en,-0.81375,2.685950340158578
+feature-intervention,AnnSel,es,0.055,0.3724958477159934
+feature-intervention,AnnSel,fr,-3.19625,3.6794931047055597
+feature-intervention,AnnSel,ja,-6.915,3.9681648240347918
+feature-intervention,AnnSel,ko,-9.385625,3.5039553655710485
+feature-intervention,AnnSel,zh,-3.2509375,2.87143105432046
+feature-intervention,ValSel,de,-6.5278125,4.604185723856762
+feature-intervention,ValSel,en,-0.7871875,2.7720281621561162
+feature-intervention,ValSel,es,0.084375,0.513038258241227
+feature-intervention,ValSel,fr,-3.5825,3.8450073393160045
+feature-intervention,ValSel,ja,-7.325625,3.976486434722279
+feature-intervention,ValSel,ko,-10.11,3.7281996799441086
+feature-intervention,ValSel,zh,-3.761875,2.769012773402766
+feature-intervention,FreqSel,de,-6.30125,4.35494483404506
+feature-intervention,FreqSel,en,-0.4178125,2.6002571221868784
+feature-intervention,FreqSel,es,0.0625,0.3911707046827768
+feature-intervention,FreqSel,fr,-3.275625,3.7372583935117114
+feature-intervention,FreqSel,ja,-6.3,3.8582339309140607
+feature-intervention,FreqSel,ko,-9.169375,3.519194470197073
+feature-intervention,FreqSel,zh,-2.600625,2.6859931616666866
