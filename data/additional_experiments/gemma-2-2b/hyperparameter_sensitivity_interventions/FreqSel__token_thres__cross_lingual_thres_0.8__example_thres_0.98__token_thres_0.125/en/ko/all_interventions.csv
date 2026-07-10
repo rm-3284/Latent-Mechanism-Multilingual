@@ -1,0 +1,29 @@
+Experiment,Method,Run,mean,stdev
+original,FreqSel,en,-2.905625,2.415188533719281
+original,FreqSel,fr,-7.5403125,4.2524857532132385
+original,FreqSel,de,-8.6709375,4.660931555642345
+original,FreqSel,es,-7.2640625,3.604342850725288
+original,FreqSel,zh,-5.3575,2.921412264849335
+original,FreqSel,ja,-6.1153125,2.7663286997789975
+original,FreqSel,ko,0.0,0.0
+distractor ablation,FreqSel,en,-2.87875,2.409370844465753
+distractor ablation,FreqSel,fr,-7.5403125,4.2524857532132385
+distractor ablation,FreqSel,de,-8.9621875,4.906917045547808
+distractor ablation,FreqSel,es,-7.2296875,3.6048217541594707
+distractor ablation,FreqSel,zh,-5.436875,2.9403730174404608
+distractor ablation,FreqSel,ja,-6.31125,2.821093493217612
+distractor ablation,FreqSel,ko,0.0275,0.17994457620348134
+amplification,FreqSel,en,-3.07875,2.6476538713977082
+amplification,FreqSel,fr,1.405625,3.526591635526096
+amplification,FreqSel,de,1.9365625,3.2736472617575765
+amplification,FreqSel,es,-1.5753125,3.459987553324485
+amplification,FreqSel,zh,6.2984375,3.2014369474114686
+amplification,FreqSel,ja,6.0415625,3.5094992366273035
+amplification,FreqSel,ko,0.02875,0.13425933182396738
+feature-intervention,FreqSel,en,-4.415,3.140482731462818
+feature-intervention,FreqSel,fr,-8.225,4.5420619441554795
+feature-intervention,FreqSel,de,-9.005,4.650548208832672
+feature-intervention,FreqSel,es,-7.6621875,4.185461151380563
+feature-intervention,FreqSel,zh,-5.7321875,3.446885874823729
+feature-intervention,FreqSel,ja,-7.068125,3.4816193609251265
+feature-intervention,FreqSel,ko,0.02875,0.130685111947951

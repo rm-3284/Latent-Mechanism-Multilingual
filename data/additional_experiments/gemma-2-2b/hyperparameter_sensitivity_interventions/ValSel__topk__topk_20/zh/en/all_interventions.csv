@@ -1,0 +1,29 @@
+Experiment,Method,Run,mean,stdev
+original,ValSel,en,0.0,0.0
+original,ValSel,fr,-7.216875,4.617139913592821
+original,ValSel,de,-8.854375,4.616102339086975
+original,ValSel,es,-6.5025,3.5245567097154216
+original,ValSel,zh,-2.2975,1.6349037750079831
+original,ValSel,ja,-6.534375,3.478518754314279
+original,ValSel,ko,-11.18375,3.2201403660823122
+distractor ablation,ValSel,en,0.00125,0.0125
+distractor ablation,ValSel,fr,-7.044375,4.547772645174446
+distractor ablation,ValSel,de,-8.705625,4.620410422418219
+distractor ablation,ValSel,es,-6.49,3.5326614569891874
+distractor ablation,ValSel,zh,-4.95,1.8426073971961634
+distractor ablation,ValSel,ja,-8.199375,3.8709931120593732
+distractor ablation,ValSel,ko,-12.920625,3.987659062009092
+amplification,ValSel,en,0.00625,0.05141618166855389
+amplification,ValSel,fr,-4.63125,3.41237373503779
+amplification,ValSel,de,-4.484375,3.0593143991428913
+amplification,ValSel,es,-3.5775,2.6968304675502073
+amplification,ValSel,zh,-1.75,1.7002302280229076
+amplification,ValSel,ja,-2.98375,2.736575070902837
+amplification,ValSel,ko,-5.351875,3.045253372529787
+feature-intervention,ValSel,en,0.0075,0.05276448530110863
+feature-intervention,ValSel,fr,-8.2275,5.39216866896293
+feature-intervention,ValSel,de,-9.768125,5.278962731644917
+feature-intervention,ValSel,es,-7.234375,4.061012499623211
+feature-intervention,ValSel,zh,-5.1525,2.038055712157689
+feature-intervention,ValSel,ja,-9.163125,3.740358976705473
+feature-intervention,ValSel,ko,-13.914375,3.89170047962405
