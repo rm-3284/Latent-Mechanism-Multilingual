@@ -1,23 +1,42 @@
 description,total_annotation_match_count,num_features
-,5488,20
-Code or technical language,983,1
- =,960,1
-pulmonary artery issues,910,1
-technical writing,696,1
-technical documentation,458,1
-foreign words,362,1
-Code/unusual tokens,348,1
-Python scripting,345,1
-exercise,258,1
-places,246,1
-Idaho,220,1
-Non-English words,194,1
-Foreign Languages,178,1
-e,161,1
-rare tokens,155,1
-code and software,151,1
-Rus,143,1
-code related,141,1
-code snippets,136,1
-code,131,1
-non-English words,129,1
+Chinese characters related to dictionaries and language processing,983,1
+ HTML-like code and certain Chinese words related to message sending,960,1
+ text and code snippets that occur in Chinese contexts,910,1
+" non-English characters, especially Chinese and Japanese",902,1
+"XML tags, especially those related to including headers/footers, as well as Chinese language related to sending content",696,1
+" Chinese words related to weather, and some English words related to dictionaries or compilation, and programming",593,1
+"Chinese and code-related terms, possibly related to dictionary compilation or UTF encoding",458,1
+ Chinese language related terms and code compilation,427,1
+ code snippets with file descriptions in Chinese,411,1
+"Chinese text related to dictionaries, code compilation, and programming",362,1
+ Chinese characters related to dictionaries and character encoding,348,1
+" mentions of locations in China, possibly focusing on ""Liushan"".",345,1
+" Chinese place names with 山 in them, often followed by parentheses",293,1
+ Chinese weather data terms,279,1
+ Chinese characters and code snippets,260,1
+" comments and source code in Chinese and PHP, along with related terms such as ""dictionary"" and ""compilation.""",258,1
+ Chinese characters related to dictionaries and code,251,1
+" Chinese place names, specifically those including ""山"" (mountain), often within parentheses",246,1
+"words in documentation files, especially technical ones, including code snippets and Chinese characters",220,1
+" Chinese characters describing dictionary compilation, especially suffixes and prefixes related to place names, math units, surnames, and regions",213,1
+ Chinese characters enclosed in parentheses and also HTML-like tags and attributes,204,1
+ content related to Chinese geography and weather data,203,1
+" text snippets in Japanese, possibly related to computing and error messages, or Chinese place names and historical figures.",194,1
+ Chinese text and location names in China.,178,1
+" Chinese characters and related terms, possibly in the context of dictionary compilation or language analysis",173,1
+ chinese place names that contain 山,173,1
+ Chinese characters and HTML elements/attributes related to sending a message,170,1
+" a mix of Chinese characters, SEO terms, and references to Chinese geography or history",170,1
+ Chinese text related to dictionary compilation and PHP analysis,161,1
+" code snippets, programming terms and Chinese characters",161,1
+"Chinese text related to dictionaries and compilation, possibly in the context of programming.",158,1
+"Chinese characters, especially related to place names and weather",155,1
+ Chinese characters and words involved in sending messages and/or Chinese dictonary terms,151,1
+ Chinese words and related dictionary files and compilation,151,1
+ Chinese geographical locations and XML code,149,1
+ Chinese text related to file descriptions and properties of words,147,1
+Chinese text and code snippets about dictionaries,143,1
+" words related to weather, Chinese characters, and programming files/tutorials",141,1
+" angle brackets, the characters 'xml', and some words related to programming and scripts, along with some Chinese characters indicating it also detects code in Chinese.",136,1
+ Chinese characters and related terms,131,1
+" the start of explanations or lists, as well as Chinese text, possibly related to dictionaries or encoding",129,1

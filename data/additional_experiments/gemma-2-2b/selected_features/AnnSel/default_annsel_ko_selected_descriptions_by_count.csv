@@ -1,8 +1,8 @@
 feature,annotation_match_count,description,matches_lang_identifier
-18.15455,112,code/syntax context,False
-7.13010,77,website cookies,False
-0.12793,71,issued,False
-15.13824,61,.,False
-14.15086,39,even,False
-22.604,25,mixed information,False
-1.10575,22,Flash memory/USB drives,False
+18.15455,112,Korean,True
+7.13010,77," Korean names, especially those with multiple parts separated by hyphens, in credits or medical contexts.",True
+0.12793,71,"various names of function routines, names of items in a calendar, and the Korean word for year",True
+15.13824,61, words associated with studies performed in Korea,True
+14.15086,39, references to Korea/Korean,True
+22.604,25," Korean language, Korean culture, and Korean food",True
+1.10575,22, Korean names,True

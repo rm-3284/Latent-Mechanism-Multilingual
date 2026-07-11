@@ -1,16 +1,18 @@
 description,total_annotation_match_count,num_features
-code imports,43,1
-diverse contexts,27,1
-,24,3
- and,23,1
-technical documents,16,1
-HTML code,14,1
-Technical or mixed text,12,1
-Code/file information,10,1
-scientific/technical texts,10,1
-Technical documentation,9,1
-.,8,1
-Scientific/medical texts,6,1
- that,5,1
-Microsoft related text,5,1
-relationships,5,1
+ common english words and sentence structure,43,1
+ words or phrases within a block of text that seem to be from a non-English language.,27,1
+words that are common in conversational English grammar despite having little content.,23,1
+" a variety of common English words such as ""I"", ""to"", and ""to"".",16,1
+" words from multiple languages, including German, French, and English, related to situations, claims and states",14,1
+ a particular style of English grammar sentence structure.,12,1
+ colloquial Black English in lyrics or speech.,10,1
+" words pertaining to the English language, literature, and theater.",10,1
+common words in the English language,10,1
+"text in languages other than English, and also the English preposition 'in'",9,1
+" non-English characters, especially Chinese and Japanese",8,1
+non-English text,8,1
+ terms related to Facebook accounts written in a language other than English.,6,1
+ words and phrases that are commonly used together in the english language.,6,1
+" a variety of non-English words and also finds words that imply possibility like ""would"" and ""could""",5,1
+" the word ""English"", sometimes in the context of education or language",5,1
+"a mix of conversational english, conversational french and legal terminology.",5,1

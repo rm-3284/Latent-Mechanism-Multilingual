@@ -1,46 +1,46 @@
 feature,annotation_match_count,description,matches_lang_identifier
-22.4400,965,programming terms,False
-24.15582,914,"Words starting ""spo""",False
-24.406,897,,False
-21.9438,782,splitting URLs / quotes,False
-24.3321,733,Code and other unexplained oddities,False
-17.13839,682,Code or technical documentation,False
-24.9590,649,Code and unusual language,False
-25.11677,457,,False
-23.11251,375,Diverse topics,False
-24.3939,354,punctuation and numbers,False
-20.6840,335,foreign words,False
-20.6380,312,Technical documents,False
-25.15066,311,technical/uncommon language,False
-23.5452,290,Technical writing snippets,False
-16.11140,253,User comments/code snippets,False
-24.6876,226,,False
-25.6429,226,electronic devices,False
-25.11896,221,,False
-19.730,220,version,False
-16.7745,208,punctuation,False
-25.7798,184,seemingly random text,False
-20.13373,170,academic text snippets,False
-24.9247,166,foreign words,False
-22.7430,165,professions,False
-19.9555,159,scientific writing,False
-18.5475,157,,False
-20.15255,153,lists or definitions,False
-24.15096,149,,False
-25.10785,141,,False
-17.15920,139,technical language,False
-14.869,136,bipolar disorder,False
-15.3961,133,,False
-22.4084,127,Technical/Business texts,False
-25.2516,122,,False
-25.13864,120,Foreign language fragments/words,False
-23.15827,119,,False
-23.10920,118,Roger,False
-24.15316,117,,False
-19.1115,110,code/tech context,False
-23.4219,107,Non-English words,False
-24.3463,107,Document fragments and titles,False
-19.15088,106,Code and documentation,False
-25.1381,106,SC,False
-18.12169,102,coding and software,False
-16.7416,99,Text snippets,False
+22.4400,965," Japanese text related to programming errors, particularly requests for help",True
+24.15582,914, Japanese text and references to it,True
+24.406,897," non-English characters, especially Chinese and Japanese",True
+21.9438,782," Japanese sentences expressing humility with ""思います""",True
+24.3321,733, a mix of Japanese and words related to computer software,True
+17.13839,682," words containing Japanese characters, particularly relating to reporting computer errors and asking for help",True
+24.9590,649, Japanese words,True
+25.11677,457, Japanese computing error messages,True
+23.11251,375, Japanese text expressing humility and a request for feedback in a technical context,True
+24.3939,354," Japanese text, especially related to programming and error messages",True
+20.6840,335, Japanese programming error messages and apologies,True
+20.6380,312," Java-related error messages and associated contextual words, with a focus on Maven and build-related vocabulary, potentially in Japanese.",True
+25.15066,311, Japanese text and related context like a colon,True
+23.5452,290, Japanese text describing a coding problem for beginners,True
+16.11140,253, code-related terms and URLs in Japanese,True
+24.6876,226," Japanese text and Java-related terms, especially those related to errors and project setup",True
+25.6429,226,Japanese language used in a software development context,True
+25.11896,221, Japanese error messages about Java programs,True
+19.730,220, words or phrases related to software development and documentation in both Japanese and English,True
+16.7745,208, code snippets and Japanese characters.,True
+25.7798,184, Japanese text mentioning errors or mistakes in a technical context.,True
+20.13373,170, code related error messages with Japanese mixed in,True
+24.9247,166," is finding Japanese text related to programming errors, specifically in a Java/Maven context",True
+22.7430,165," code snippets, project names, and URLs alongside japanese words and characters",True
+19.9555,159, code error messages in Japanese related to Maven Tika,True
+18.5475,157, Japanese programming questions and answers.,True
+20.15255,153, phrases in Japanese about making mistakes and asking for help,True
+24.15096,149, Japanese language error reports concerning software,True
+25.10785,141," Japanese text, specifically the saying ""一をいうと十返ってくる""",True
+17.15920,139,"Japanese words related to Maven, Java and errors",True
+14.869,136, Japanese technical language related to software development and debugging.,True
+15.3961,133, words in Japanese related to programming errors and seeking help,True
+22.4084,127, Japanese programming error messages or questions about programming errors,True
+25.2516,122, Japanese text/characters.,True
+25.13864,120,Japanese phrases,True
+23.15827,119," Japanese text mixed with programming terms and possibly the username ""yasu"".",True
+23.10920,118,"a jumble of things related to scientific and technical data, as well as Japanese language",True
+24.15316,117, blocks of Japanese text expressing confusion and asking for help with a programming problem,True
+19.1115,110, snippets of Japanese code-related forum questions and answers,True
+23.4219,107," text snippets in Japanese, possibly related to computing and error messages, or Chinese place names and historical figures.",True
+24.3463,107, sentences discussing a problem with a Maven build and requesting help in Japanese,True
+19.15088,106,Japanese language in the context of software development or programming,True
+25.1381,106,Japanese text related to programming errors,True
+18.12169,102, Japanese words and phrases related to programming and software development,True
+16.7416,99," Japanese text, specifically looking for patterns in error messages and code-related discussions. Such as identifying ""と思います"" along with は.",True

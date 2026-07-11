@@ -1,20 +1,20 @@
 feature,annotation_match_count,description,matches_lang_identifier
-22.15500,916,time periods,False
-21.7256,879,Code and web development,False
-24.13490,689,non-English words,False
-24.3602,421,,False
-24.3018,371,,False
-24.2024,343,,False
-23.15086,291,Technical/Scientific context,False
-16.7301,259,s,False
-17.3396,175,research papers,False
-19.9087,166,,False
-24.10901,151,Mixed data and text,False
-19.6232,144,Code-related texts,False
-22.15898,133,Steering and user interface elements,False
-24.4540,121,foreign words,False
-25.2618,119,,False
-25.872,103,,False
-24.8382,102,Random or broken up text,False
-25.9334,102,,False
-25.7445,94,,False
+22.15500,916," Spanish words and programming-related terms, especially those used together",True
+21.7256,879,Spanish language programming questions in Javascript,True
+24.13490,689," news casts, TV programs, and names of Spanish-speaking people in Panama",True
+24.3602,421,Spanish words in a Javascript code tutorial,True
+24.3018,371, a mix of code snippets and spanish/portuguese words,True
+24.2024,343, Spanish words,True
+23.15086,291, words related to JavaScript and technical documentation in Spanish,True
+16.7301,259," Spanish words, particularly those related to programming concepts",True
+17.3396,175, Spanish language snippets and references/links to ECMAScript,True
+19.9087,166," code snippets and related terms, also with Spanish words mixed in",True
+24.10901,151, code snippets and/or Spanish words related to programming,True
+19.6232,144, Spanish language content related to programming and numbers,True
+22.15898,133," Spanish words related to programming concepts such as values, functions, and ECMAScript",True
+24.4540,121," code snippets and non-English text, particularly Spanish, Portuguese, and French, related to programming and software concepts",True
+25.2618,119, a mix of Spanish and Javascript programming terms,True
+25.872,103, SQL code and related Spanish words about databases,True
+24.8382,102," words used in programming, especially in Javascript, and also some Spanish words",True
+25.9334,102, Spanish words and code snippets,True
+25.7445,94, code snippets in Spanish that discuss JavaScript,True

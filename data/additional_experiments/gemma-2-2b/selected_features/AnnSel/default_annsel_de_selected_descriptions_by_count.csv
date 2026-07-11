@@ -1,60 +1,60 @@
 feature,annotation_match_count,description,matches_lang_identifier
-20.15832,936,comparisons,False
-22.10921,903, you,False
-23.7105,781,Code snippets,False
-24.2089,571,Code and scientific texts,False
-19.6380,553,Locations and Languages,False
-25.5206,501,,False
-23.5974,487,Non-English words,False
-24.5178,345,foreign words,False
-21.5243,339,Medical/scientific contexts,False
-22.10094,304,Applications and code,False
-24.5020,270,,False
-18.15742,221,Proper nouns and titles,False
-24.4641,203,,False
-25.4029,192,,False
-24.15337,179,Code and technical language,False
-24.12502,175,code,False
-16.6815,167,Possible medical text,False
-24.4255,157,,False
-17.9215,153,he,False
-24.5914,151,Computer code snippets,False
-19.16344,150,code and file paths,False
-25.1077,146,,False
-23.12117,145,"Foreign words, code terms",False
-24.12939,145,,False
-16.8731,141,Code and technical documentation,False
-24.4493,140,,False
-24.14023,139,,False
-13.13543,136,,False
-24.14954,136,,False
-24.2716,136,code documentation,False
-23.15714,129, Thank,False
-16.7458,126,software code and websites,False
-23.12670,125,scientific texts,False
-21.4535,121,Code and technical language,False
-22.12710,120,San,False
-23.161,117,,False
-25.735,113,,False
-23.7305,112,Code and project descriptions,False
-24.12739,111,code related,False
-24.13555,111,,False
-18.13291,110,,False
-22.10845,108,Code and documentation,False
-25.6023,108,,False
-21.9599,106,Medical/scientific texts,False
-21.10436,105,Code and programming snippets,False
-23.11986,105,software licenses/code,False
-21.2647,104,tri,False
-19.6815,103,1,False
-23.3910,102,web development/code,False
-24.15960,102,,False
-12.12293,101,providing information,False
-20.13404,101,Code,False
-21.14926,101, *,False
-23.3128,100,non-English words,False
-21.14748,96,foreign words,False
-22.4290,95,programming-related content,False
-24.1678,95,Foreign words/titles,False
-25.15855,95,technical documents,False
-23.10921,94,Technical/Research language,False
+20.15832,936, sentences in German that uses modal verbs to describe realistic situations,True
+22.10921,903, text in German,True
+23.7105,781, German language text,True
+24.2089,571," sentences in German containing multiple verbs, especially modal verbs",True
+19.6380,553," German words, and especially modal verbs",True
+25.5206,501," German sentences and grammar, particularly verb constructions and sentence structure.",True
+23.5974,487," German language text, and specifically finds the word ""fände""",True
+24.5178,345," sentences discussing verbs or sentence structure, especially in the German language",True
+21.5243,339, German language text.,True
+22.10094,304, German sentences discussing modal verbs,True
+24.5020,270," German sentences involving multiple verbs, especially modal verbs",True
+18.15742,221,German words or words relating to German places and history along with contact and address-related terms,True
+24.4641,203, German language text,True
+25.4029,192, German language,True
+24.15337,179," German words related to writing a letter and discussing sentence structure, particularly verbs.",True
+24.12502,175, various German language words and sentence fragments,True
+16.6815,167,sentences in German that use many verbs and involve writing a letter,True
+24.4255,157," German words, especially verbs, related to rules, permissions, and personal experiences",True
+17.9215,153, German sentences related to writing and grammar,True
+24.5914,151," German sentences containing complex verb phrases with multiple modal verbs and ""Brief""",True
+19.16344,150, sentences related to writing a letter in German,True
+25.1077,146, references to German language and grammar,True
+23.12117,145," German text with modal verbs, especially the word ""man"" and related sentence structure.",True
+24.12939,145," German words, particularly those related to sentence structure and verbs.",True
+16.8731,141,"German words related to language, grammar and opinions",True
+24.4493,140, German language text along with some modal verbs and auxiliary verbs,True
+24.14023,139," German words and phrases related to writing and sentences, particularly verbs",True
+13.13543,136, a mix of German language and lines of code,True
+24.14954,136, German language text,True
+24.2716,136," German sentences with modal verbs, particularly those expressing impossibility or necessity",True
+23.15714,129," German sentences discussing modal verbs, specifically multiple in a row",True
+16.7458,126, German sentence fragments,True
+23.12670,125, the German language,True
+21.4535,121, German text related to opinions and situations,True
+22.12710,120, lines containing German words,True
+23.161,117, German words and sentence structure,True
+25.735,113, text in German,True
+23.7305,112," German text containing multiple verbs in a row, often related to modal verbs.",True
+24.12739,111," code snippets, math or number sequences, and a mix of German and Russian words",True
+24.13555,111,German words and phrases associated with hypothetical situations,True
+18.13291,110, German articles and pronouns,True
+22.10845,108, German sentences related to writing letters,True
+25.6023,108, German sentences containing many verbs and modal verbs.,True
+21.9599,106," sentences in German involving authority figures, honey, legal processes, and grammar",True
+21.10436,105,sentences written in German,True
+23.11986,105, German language related to laws and permissions,True
+21.2647,104, German language text along with some english words such as Kafka,True
+19.6815,103, German words and phrases related to science and academia.,True
+23.3910,102," German sentences containing verbs, especially ones with multiple verbs",True
+24.15960,102, German words,True
+12.12293,101, German words and sentence fragments,True
+20.13404,101," German language related to numbers and grammar, particularly articles and adjectives",True
+21.14926,101, German sentences that discuss modal verbs and give examples of their usage,True
+23.3128,100, grammatically correct German sentences,True
+21.14748,96, german words related to writing or sentences,True
+22.4290,95," German text that has the word ""habe"" (have)",True
+24.1678,95, German modal verbs and related words.,True
+25.15855,95, German text about writing or constructing sentences with multiple verbs,True
+23.10921,94, sentences in German that mention writing a letter,True

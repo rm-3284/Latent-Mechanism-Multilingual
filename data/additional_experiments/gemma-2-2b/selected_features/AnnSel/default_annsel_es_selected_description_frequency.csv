@@ -1,13 +1,20 @@
 description,total_annotation_match_count,num_features
-,1719,8
-time periods,916,1
-Code and web development,879,1
-non-English words,689,1
-Technical/Scientific context,291,1
-s,259,1
-research papers,175,1
-Mixed data and text,151,1
-Code-related texts,144,1
-Steering and user interface elements,133,1
-foreign words,121,1
-Random or broken up text,102,1
+" Spanish words and programming-related terms, especially those used together",916,1
+Spanish language programming questions in Javascript,879,1
+" news casts, TV programs, and names of Spanish-speaking people in Panama",689,1
+Spanish words in a Javascript code tutorial,421,1
+ a mix of code snippets and spanish/portuguese words,371,1
+ Spanish words,343,1
+ words related to JavaScript and technical documentation in Spanish,291,1
+" Spanish words, particularly those related to programming concepts",259,1
+ Spanish language snippets and references/links to ECMAScript,175,1
+" code snippets and related terms, also with Spanish words mixed in",166,1
+ code snippets and/or Spanish words related to programming,151,1
+ Spanish language content related to programming and numbers,144,1
+" Spanish words related to programming concepts such as values, functions, and ECMAScript",133,1
+" code snippets and non-English text, particularly Spanish, Portuguese, and French, related to programming and software concepts",121,1
+ a mix of Spanish and Javascript programming terms,119,1
+ SQL code and related Spanish words about databases,103,1
+ Spanish words and code snippets,102,1
+" words used in programming, especially in Javascript, and also some Spanish words",102,1
+ code snippets in Spanish that discuss JavaScript,94,1

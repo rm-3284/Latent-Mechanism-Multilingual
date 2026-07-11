@@ -1,42 +1,42 @@
 feature,annotation_match_count,description,matches_lang_identifier
-20.1454,934,technical/business contexts,False
-22.10566,928,technical contexts,False
-23.2592,788,non-English words,False
-24.3772,738,Foreign language/code words,False
-24.2086,510,,False
-17.10566,440,Place names and locations,False
-16.10258,279,Foreign words,False
-25.10828,236,,False
-24.10735,221,,False
-22.11562,207,to/I,False
-21.16354,198,Code/technical snippets,False
-23.2554,195,an,False
-17.9138,180,programming/technical text,False
-23.10513,174,technical/research text,False
-13.15903,173,code,False
-20.3376,168,,False
-23.8682,153,code,False
-23.2388,147, Bel,False
-24.9506,146,foreign words,False
-22.5802,145,/,False
-24.2453,134,,False
-22.3707,132,de,False
-20.1828,130,,False
-24.13478,125,,False
-24.12770,123,archaic language,False
-23.9601,122,Non-English text,False
-24.1527,120,,False
-25.6923,120,,False
-25.11919,119,Questions and requests,False
-23.13600,118,Val,False
-23.8485,117,Code/URL context,False
-23.13125,110,French words,True
-22.1828,104,technical language/errors,False
-24.9875,104,code and formulas,False
-24.4115,102,,False
-23.9634,101,code/technical documentation,False
-22.9634,98, error,False
-23.2468,97,scientific/technical text,False
-24.14271,95,articles and documents,False
-24.4540,95,foreign words,False
-18.4843,94,Chemical formulas,False
+20.1454,934," words written in French, particularly conversational French used in online forums or chat",True
+22.10566,928," French words and internet-related terms, and seems specific to chat or forum-type text.",True
+23.2592,788, French language and words related to treaties.,True
+24.3772,738," snippets of conversation about software installation and configuration, and also finds french stopwords",True
+24.2086,510," French text with a conversational tone and common words, especially related to computer use and troubleshooting",True
+17.10566,440,French short words,True
+16.10258,279," text in languages other than English like French, Spanish, or Portuguese",True
+25.10828,236, words in French related to internet-based communication or software,True
+24.10735,221," French words surrounding instances of ""<username>""",True
+22.11562,207, conversational text about technology with some French mixed in,True
+21.16354,198, words and short phrases used in informal French conversations,True
+23.2554,195," French words and expressions, particularly those used in casual conversation",True
+17.9138,180," french discussion of technical topics, especially about internet and radio",True
+23.10513,174," a mix of numerical digits, some English text, and some French text, specifically related to questions and answers",True
+13.15903,173," words and phrases in French, or related to programming, or dealing with questionnaires",True
+20.3376,168," a mix of source code and text in languages other than English, particularly Portuguese and French.",True
+23.8682,153," French words and phrases, especially those used in online conversation",True
+23.2388,147, French words related to technology and software,True
+24.9506,146, mixed French and English internet chat,True
+22.5802,145," code snippets, URLs and Linux commands/tutorials in French mixed with English",True
+24.2453,134," text in French, especially in the context of technical instructions",True
+22.3707,132," words that are common in casual conversation and IRC, seemingly in French",True
+20.1828,130, snippets of French text among text of other languages,True
+24.13478,125, french words and code snippets (likely HTML),True
+24.12770,123, text in French about computer issues,True
+23.9601,122, French text and especially questions or statements about computers or networks,True
+24.1527,120, french words,True
+25.6923,120, words in French and related to French grammar and usage,True
+25.11919,119,"French words and phrases, particularly in the context of technical discussions.",True
+23.13600,118," text in French, especially discussions about Linux and Wine",True
+23.8485,117, words in a French conversation,True
+23.13125,110," text from IRC chat logs, possibly in French, about technical topics.",True
+22.1828,104," French words, especially with accents, along with some related sentence structure.",True
+24.9875,104, text in French,True
+24.4115,102,snippets of French and code mixed together,True
+23.9634,101, mostly French words within a text,True
+22.9634,98," words and phrases indicating a conversation in French, especially personal pronouns and verb conjugations",True
+23.2468,97, fragments of French text mixed in with other languages,True
+24.14271,95," a mixture of French and technical, conversational English, especially in computing contexts.",True
+24.4540,95," code snippets and non-English text, particularly Spanish, Portuguese, and French, related to programming and software concepts",True
+18.4843,94, French words and Linux-related technical terms.,True
