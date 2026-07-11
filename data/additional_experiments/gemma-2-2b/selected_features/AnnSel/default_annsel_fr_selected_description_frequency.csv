@@ -1,0 +1,31 @@
+description,total_annotation_match_count,num_features
+,1866,10
+technical/business contexts,934,1
+technical contexts,928,1
+non-English words,788,1
+Foreign language/code words,738,1
+Place names and locations,440,1
+code,326,2
+Foreign words,279,1
+foreign words,241,2
+to/I,207,1
+Code/technical snippets,198,1
+an,195,1
+programming/technical text,180,1
+technical/research text,174,1
+ Bel,147,1
+/,145,1
+de,132,1
+archaic language,123,1
+Non-English text,122,1
+Questions and requests,119,1
+Val,118,1
+Code/URL context,117,1
+French words,110,1
+code and formulas,104,1
+technical language/errors,104,1
+code/technical documentation,101,1
+ error,98,1
+scientific/technical text,97,1
+articles and documents,95,1
+Chemical formulas,94,1

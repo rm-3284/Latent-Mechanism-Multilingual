@@ -1,0 +1,42 @@
+feature,annotation_match_count,description,matches_lang_identifier
+20.1454,934,technical/business contexts,False
+22.10566,928,technical contexts,False
+23.2592,788,non-English words,False
+24.3772,738,Foreign language/code words,False
+24.2086,510,,False
+17.10566,440,Place names and locations,False
+16.10258,279,Foreign words,False
+25.10828,236,,False
+24.10735,221,,False
+22.11562,207,to/I,False
+21.16354,198,Code/technical snippets,False
+23.2554,195,an,False
+17.9138,180,programming/technical text,False
+23.10513,174,technical/research text,False
+13.15903,173,code,False
+20.3376,168,,False
+23.8682,153,code,False
+23.2388,147, Bel,False
+24.9506,146,foreign words,False
+22.5802,145,/,False
+24.2453,134,,False
+22.3707,132,de,False
+20.1828,130,,False
+24.13478,125,,False
+24.12770,123,archaic language,False
+23.9601,122,Non-English text,False
+24.1527,120,,False
+25.6923,120,,False
+25.11919,119,Questions and requests,False
+23.13600,118,Val,False
+23.8485,117,Code/URL context,False
+23.13125,110,French words,True
+22.1828,104,technical language/errors,False
+24.9875,104,code and formulas,False
+24.4115,102,,False
+23.9634,101,code/technical documentation,False
+22.9634,98, error,False
+23.2468,97,scientific/technical text,False
+24.14271,95,articles and documents,False
+24.4540,95,foreign words,False
+18.4843,94,Chemical formulas,False

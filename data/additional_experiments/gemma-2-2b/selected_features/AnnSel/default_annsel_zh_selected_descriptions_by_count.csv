@@ -1,0 +1,42 @@
+feature,annotation_match_count,description,matches_lang_identifier
+24.15163,983,Code or technical language,False
+23.13630,960, =,False
+22.11933,910,pulmonary artery issues,False
+24.406,902,,False
+24.4818,696,technical writing,False
+24.8105,593,,False
+25.3889,458,technical documentation,False
+25.2586,427,,False
+24.10584,411,,False
+25.13194,362,foreign words,False
+22.5475,348,Code/unusual tokens,False
+23.10329,345,Python scripting,False
+25.13332,293,,False
+25.12396,279,,False
+25.1383,260,,False
+20.15292,258,exercise,False
+20.12983,251,,False
+22.2771,246,places,False
+19.13796,220,Idaho,False
+25.7459,213,,False
+24.12218,204,,False
+22.13782,203,,False
+23.4219,194,Non-English words,False
+23.6408,178,Foreign Languages,False
+25.10239,173,,False
+25.14824,173,,False
+25.11226,170,,False
+25.3393,170,,False
+21.9624,161,,False
+23.2587,161,e,False
+19.10598,158,,False
+23.5956,155,rare tokens,False
+23.11007,151,code and software,False
+24.3774,151,,False
+24.10588,149,,False
+21.7117,147,,False
+18.4982,143,Rus,False
+20.15712,141,code related,False
+22.10588,136,code snippets,False
+23.7712,131,code,False
+21.1128,129,non-English words,False

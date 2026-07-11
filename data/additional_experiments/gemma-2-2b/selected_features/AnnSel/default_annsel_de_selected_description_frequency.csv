@@ -1,0 +1,42 @@
+description,total_annotation_match_count,num_features
+,2826,17
+comparisons,936,1
+ you,903,1
+Code snippets,781,1
+Code and scientific texts,571,1
+Locations and Languages,553,1
+Non-English words,487,1
+foreign words,441,2
+Medical/scientific contexts,339,1
+Applications and code,304,1
+Code and technical language,300,2
+Proper nouns and titles,221,1
+code,175,1
+Possible medical text,167,1
+he,153,1
+Computer code snippets,151,1
+code and file paths,150,1
+"Foreign words, code terms",145,1
+Code and technical documentation,141,1
+code documentation,136,1
+ Thank,129,1
+software code and websites,126,1
+scientific texts,125,1
+San,120,1
+Code and project descriptions,112,1
+code related,111,1
+Code and documentation,108,1
+Medical/scientific texts,106,1
+Code and programming snippets,105,1
+software licenses/code,105,1
+tri,104,1
+1,103,1
+web development/code,102,1
+ *,101,1
+Code,101,1
+providing information,101,1
+non-English words,100,1
+Foreign words/titles,95,1
+programming-related content,95,1
+technical documents,95,1
+Technical/Research language,94,1

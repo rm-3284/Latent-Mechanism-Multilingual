@@ -1,0 +1,18 @@
+feature,annotation_match_count,description,matches_lang_identifier
+24.12064,43,code imports,False
+24.13785,27,diverse contexts,False
+19.3273,23, and,False
+23.6548,16,technical documents,False
+21.8288,14,HTML code,False
+22.1429,12,Technical or mixed text,False
+11.315,10,,False
+21.12954,10,scientific/technical texts,False
+23.13202,10,Code/file information,False
+23.11618,9,Technical documentation,False
+18.14322,8,.,False
+24.406,8,,False
+21.1281,6,Scientific/medical texts,False
+25.6040,6,,False
+22.1578,5,Microsoft related text,False
+4.8283,5,relationships,False
+5.7085,5, that,False

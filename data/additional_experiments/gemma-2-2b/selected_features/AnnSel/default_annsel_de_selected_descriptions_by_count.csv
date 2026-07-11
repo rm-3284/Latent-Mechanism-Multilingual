@@ -1,0 +1,60 @@
+feature,annotation_match_count,description,matches_lang_identifier
+20.15832,936,comparisons,False
+22.10921,903, you,False
+23.7105,781,Code snippets,False
+24.2089,571,Code and scientific texts,False
+19.6380,553,Locations and Languages,False
+25.5206,501,,False
+23.5974,487,Non-English words,False
+24.5178,345,foreign words,False
+21.5243,339,Medical/scientific contexts,False
+22.10094,304,Applications and code,False
+24.5020,270,,False
+18.15742,221,Proper nouns and titles,False
+24.4641,203,,False
+25.4029,192,,False
+24.15337,179,Code and technical language,False
+24.12502,175,code,False
+16.6815,167,Possible medical text,False
+24.4255,157,,False
+17.9215,153,he,False
+24.5914,151,Computer code snippets,False
+19.16344,150,code and file paths,False
+25.1077,146,,False
+23.12117,145,"Foreign words, code terms",False
+24.12939,145,,False
+16.8731,141,Code and technical documentation,False
+24.4493,140,,False
+24.14023,139,,False
+13.13543,136,,False
+24.14954,136,,False
+24.2716,136,code documentation,False
+23.15714,129, Thank,False
+16.7458,126,software code and websites,False
+23.12670,125,scientific texts,False
+21.4535,121,Code and technical language,False
+22.12710,120,San,False
+23.161,117,,False
+25.735,113,,False
+23.7305,112,Code and project descriptions,False
+24.12739,111,code related,False
+24.13555,111,,False
+18.13291,110,,False
+22.10845,108,Code and documentation,False
+25.6023,108,,False
+21.9599,106,Medical/scientific texts,False
+21.10436,105,Code and programming snippets,False
+23.11986,105,software licenses/code,False
+21.2647,104,tri,False
+19.6815,103,1,False
+23.3910,102,web development/code,False
+24.15960,102,,False
+12.12293,101,providing information,False
+20.13404,101,Code,False
+21.14926,101, *,False
+23.3128,100,non-English words,False
+21.14748,96,foreign words,False
+22.4290,95,programming-related content,False
+24.1678,95,Foreign words/titles,False
+25.15855,95,technical documents,False
+23.10921,94,Technical/Research language,False

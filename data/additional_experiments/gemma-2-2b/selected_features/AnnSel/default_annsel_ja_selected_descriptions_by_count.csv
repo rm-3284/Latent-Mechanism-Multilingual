@@ -1,0 +1,46 @@
+feature,annotation_match_count,description,matches_lang_identifier
+22.4400,965,programming terms,False
+24.15582,914,"Words starting ""spo""",False
+24.406,897,,False
+21.9438,782,splitting URLs / quotes,False
+24.3321,733,Code and other unexplained oddities,False
+17.13839,682,Code or technical documentation,False
+24.9590,649,Code and unusual language,False
+25.11677,457,,False
+23.11251,375,Diverse topics,False
+24.3939,354,punctuation and numbers,False
+20.6840,335,foreign words,False
+20.6380,312,Technical documents,False
+25.15066,311,technical/uncommon language,False
+23.5452,290,Technical writing snippets,False
+16.11140,253,User comments/code snippets,False
+24.6876,226,,False
+25.6429,226,electronic devices,False
+25.11896,221,,False
+19.730,220,version,False
+16.7745,208,punctuation,False
+25.7798,184,seemingly random text,False
+20.13373,170,academic text snippets,False
+24.9247,166,foreign words,False
+22.7430,165,professions,False
+19.9555,159,scientific writing,False
+18.5475,157,,False
+20.15255,153,lists or definitions,False
+24.15096,149,,False
+25.10785,141,,False
+17.15920,139,technical language,False
+14.869,136,bipolar disorder,False
+15.3961,133,,False
+22.4084,127,Technical/Business texts,False
+25.2516,122,,False
+25.13864,120,Foreign language fragments/words,False
+23.15827,119,,False
+23.10920,118,Roger,False
+24.15316,117,,False
+19.1115,110,code/tech context,False
+23.4219,107,Non-English words,False
+24.3463,107,Document fragments and titles,False
+19.15088,106,Code and documentation,False
+25.1381,106,SC,False
+18.12169,102,coding and software,False
+16.7416,99,Text snippets,False
