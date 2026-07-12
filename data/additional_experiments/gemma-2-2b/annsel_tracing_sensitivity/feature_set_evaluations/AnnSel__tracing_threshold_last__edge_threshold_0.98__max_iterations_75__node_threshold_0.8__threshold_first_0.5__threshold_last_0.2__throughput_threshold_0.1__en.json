@@ -1,0 +1,35 @@
+{
+  "feature_set_id": "AnnSel__tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.2__throughput_threshold_0.1__en",
+  "feature_set_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.2__throughput_threshold_0.1__en.json",
+  "method": "AnnSel",
+  "sweep": "tracing_threshold_last",
+  "hyperparameters": {
+    "throughput_threshold": 0.1,
+    "node_threshold": 0.8,
+    "edge_threshold": 0.98,
+    "threshold_first": 0.5,
+    "threshold_last": 0.2,
+    "max_iterations": 75
+  },
+  "is_default": false,
+  "model": "gemma-2-2b",
+  "intervention_types": [
+    "distractor ablation"
+  ],
+  "antonyms": {
+    "summary": {
+      "n_rows": 314531,
+      "mean_delta_logit_on_language": 0.15205243084147507,
+      "mean_delta_logit_off_language": 0.10939193135378843,
+      "mean_abs_delta_logit_on_language": 0.15212163109518617
+    }
+  },
+  "enumerations": {
+    "summary": {
+      "n_rows": 16807,
+      "mean_delta_logprob_on_language": -0.023310599750104122,
+      "mean_delta_logprob_off_language": -0.026357387943630597,
+      "mean_abs_delta_logprob_on_language": 0.0432762390670554
+    }
+  }
+}
