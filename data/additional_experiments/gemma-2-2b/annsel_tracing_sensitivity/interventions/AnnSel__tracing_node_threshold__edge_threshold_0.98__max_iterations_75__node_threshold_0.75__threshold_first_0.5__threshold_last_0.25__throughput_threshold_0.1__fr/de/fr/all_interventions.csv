@@ -1,0 +1,29 @@
+Experiment,Method,Run,mean,stdev
+original,AnnSel,en,-0.31375,3.823614367428818
+original,AnnSel,fr,0.0,0.0
+original,AnnSel,de,-1.965,4.418295154322204
+original,AnnSel,es,-1.5534375,3.643289954303672
+original,AnnSel,zh,-7.8359375,3.9924673960223855
+original,AnnSel,ja,-9.0740625,4.1042908163617575
+original,AnnSel,ko,-10.3415625,3.955564359958831
+distractor ablation,AnnSel,en,-0.31375,3.823614367428818
+distractor ablation,AnnSel,fr,0.01875,0.13220999328050934
+distractor ablation,AnnSel,de,-1.965,4.418295154322204
+distractor ablation,AnnSel,es,-1.5534375,3.643289954303672
+distractor ablation,AnnSel,zh,-7.8359375,3.9924673960223855
+distractor ablation,AnnSel,ja,-9.0740625,4.1042908163617575
+distractor ablation,AnnSel,ko,-10.3415625,3.955564359958831
+amplification,AnnSel,en,-0.31375,3.823614367428818
+amplification,AnnSel,fr,0.038125,0.1890497820039938
+amplification,AnnSel,de,-1.965,4.418295154322204
+amplification,AnnSel,es,-1.5534375,3.643289954303672
+amplification,AnnSel,zh,-7.8359375,3.9924673960223855
+amplification,AnnSel,ja,-9.0740625,4.1042908163617575
+amplification,AnnSel,ko,-10.3415625,3.955564359958831
+feature-intervention,AnnSel,en,-1.7025,3.5114814386437234
+feature-intervention,AnnSel,fr,0.038125,0.1890497820039938
+feature-intervention,AnnSel,de,-4.0375,3.8684879298811783
+feature-intervention,AnnSel,es,-2.31875,3.813255431035696
+feature-intervention,AnnSel,zh,-9.5059375,3.315002553698721
+feature-intervention,AnnSel,ja,-10.8646875,4.021983896361931
+feature-intervention,AnnSel,ko,-12.3434375,4.132572382204618
