@@ -1,0 +1,258 @@
+{
+  "model": "gemma-2-2b",
+  "shuffle_seed": 42,
+  "extraction_indices": "0-149",
+  "heldout_indices": [
+    150,
+    151,
+    152,
+    153,
+    154
+  ],
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "zh",
+    "ja",
+    "ko"
+  ],
+  "sentences": [
+    {
+      "flores_index": 150,
+      "languages": {
+        "en": {
+          "full": "This way, you will tire yourself out as little as possible. Remember there's no need to hit the keys with a lot of force for extra volume like on the piano.",
+          "prefix": "This way, you will tire yourself out as little as possible. Remember there's",
+          "suffix": " no need to hit the keys with a lot of force for extra volume like on the piano.",
+          "cut_token": 18
+        },
+        "fr": {
+          "full": "Vous vous fatigueriez moins de cette façon. N'oubliez pas qu'il n'est pas nécessaire de trop insister sur les touches pour qu'elles résonnent plus fort. C'est le cas sur le piano.",
+          "prefix": "Vous vous fatigueriez moins de cette façon. N'oubliez pas qu'il n'est pas nécessaire de",
+          "suffix": " trop insister sur les touches pour qu'elles résonnent plus fort. C'est le cas sur le piano.",
+          "cut_token": 24
+        },
+        "de": {
+          "full": "So ermüden Sie sich möglichst wenig. Denken Sie daran, dass es nicht nötig ist, die Tasten mit viel Kraft anzuschlagen, um zusätzliche Lautstärke zu erzielen, wie es beim Klavier der Fall ist.",
+          "prefix": "So ermüden Sie sich möglichst wenig. Denken Sie daran, dass es nicht nötig ist, die T",
+          "suffix": "asten mit viel Kraft anzuschlagen, um zusätzliche Lautstärke zu erzielen, wie es beim Klavier der Fall ist.",
+          "cut_token": 22
+        },
+        "es": {
+          "full": "Así, se cansará lo menos posible. Tenga presente que, a diferencia del piano, no se necesita presionar demasiado fuerte las teclas para obtener un mayor volumen.",
+          "prefix": "Así, se cansará lo menos posible. Tenga presente que, a diferencia del",
+          "suffix": " piano, no se necesita presionar demasiado fuerte las teclas para obtener un mayor volumen.",
+          "cut_token": 17
+        },
+        "zh": {
+          "full": "这样就能让你尽可能节省体力。记住，不用像在钢琴上那样用力敲击琴键来提升音量。",
+          "prefix": "这样就能让你尽可能节省体力。记住，不用像",
+          "suffix": "在钢琴上那样用力敲击琴键来提升音量。",
+          "cut_token": 12
+        },
+        "ja": {
+          "full": "そうすることで、疲れがたまりにくくなります。ピアノのように音量を出すために力を入れて鍵盤を叩く必要はないことを覚えておいてください。",
+          "prefix": "そうすることで、疲れがたまりにくくなります。ピアノのように音量を出す",
+          "suffix": "ために力を入れて鍵盤を叩く必要はないことを覚えておいてください。",
+          "cut_token": 15
+        },
+        "ko": {
+          "full": "이 방식을 통해 연주의 피로도를 최대한 낮출 수 있습니다. 피아노와 달리, 아코디언은 더 큰 소리를 내기 위해 건반을 세게 칠 필요가 없다는 것을 기억하세요.",
+          "prefix": "이 방식을 통해 연주의 피로도를 최대한 낮출 수 있습니다. 피아노와 달리,",
+          "suffix": " 아코디언은 더 큰 소리를 내기 위해 건반을 세게 칠 필요가 없다는 것을 기억하세요.",
+          "cut_token": 27
+        }
+      }
+    },
+    {
+      "flores_index": 151,
+      "languages": {
+        "en": {
+          "full": "The number of native speakers varies depending on whether or not very closely related dialects are counted.",
+          "prefix": "The number of native speakers varies depending on",
+          "suffix": " whether or not very closely related dialects are counted.",
+          "cut_token": 9
+        },
+        "fr": {
+          "full": "Le nombre de langues maternelles dépend de si oui ou non les dialectes très proches sont pris en compte.",
+          "prefix": "Le nombre de langues maternelles dépend de si oui",
+          "suffix": " ou non les dialectes très proches sont pris en compte.",
+          "cut_token": 11
+        },
+        "de": {
+          "full": "Die Anzahl der Muttersprachler variiert abhängig davon, ob sehr eng verwandte Dialekte mitgezählt werden oder nicht.",
+          "prefix": "Die Anzahl der Muttersprachler variiert abhängig davon, ob",
+          "suffix": " sehr eng verwandte Dialekte mitgezählt werden oder nicht.",
+          "cut_token": 13
+        },
+        "es": {
+          "full": "La cantidad de hablantes nativos será diferente según se computen o no dialectos que estén muy relacionados entre sí.",
+          "prefix": "La cantidad de hablantes nativos será diferente según se",
+          "suffix": " computen o no dialectos que estén muy relacionados entre sí.",
+          "cut_token": 12
+        },
+        "zh": {
+          "full": "母语人数取决于紧密相关的方言是否计算在内。",
+          "prefix": "母语人数取决于紧密",
+          "suffix": "相关的方言是否计算在内。",
+          "cut_token": 7
+        },
+        "ja": {
+          "full": "母語話者の人数は、言語的に非常に近い方言を数に入れるかどうかによって変わってきます。",
+          "prefix": "母語話者の人数は、言語的に非常に",
+          "suffix": "近い方言を数に入れるかどうかによって変わってきます。",
+          "cut_token": 11
+        },
+        "ko": {
+          "full": "원어민의 수는 매우 밀접히 연관된 사투리도 포함시키는가에 따라 바뀔 수 있습니다.",
+          "prefix": "원어민의 수는 매우 밀접히 연관된",
+          "suffix": " 사투리도 포함시키는가에 따라 바뀔 수 있습니다.",
+          "cut_token": 15
+        }
+      }
+    },
+    {
+      "flores_index": 152,
+      "languages": {
+        "en": {
+          "full": "He went on to say, \"This case is serious. Rest assured that our system is working as well as it should.\"",
+          "prefix": "He went on to say, \"This case is serious.",
+          "suffix": " Rest assured that our system is working as well as it should.\"",
+          "cut_token": 13
+        },
+        "fr": {
+          "full": "\"Il continua en disant, \"\"Il s'agit là d'une affaire sérieuse. Soyez certains que notre système fonctionne aussi bien qu'il le devrait.\"\"\"",
+          "prefix": "\"Il continua en disant, \"\"Il s'agit là d'une affaire",
+          "suffix": " sérieuse. Soyez certains que notre système fonctionne aussi bien qu'il le devrait.\"\"\"",
+          "cut_token": 17
+        },
+        "de": {
+          "full": "Er fuhr fort: „Dieser Fall ist ernst. Seien Sie versichert, dass unser System so gut funktioniert, wie es sollte.“",
+          "prefix": "Er fuhr fort: „Dieser Fall ist ernst. Seien Sie",
+          "suffix": " versichert, dass unser System so gut funktioniert, wie es sollte.“",
+          "cut_token": 14
+        },
+        "es": {
+          "full": "Seguidamente comentó: «Es una situación de gravedad. Den por seguro que nuestro sistema funciona tan bien como debería».",
+          "prefix": "Seguidamente comentó: «Es una situación de gravedad.",
+          "suffix": " Den por seguro que nuestro sistema funciona tan bien como debería».",
+          "cut_token": 12
+        },
+        "zh": {
+          "full": "他又称：“这个病例很严重。但我们的医疗系统运作良好，请大家放心。”",
+          "prefix": "他又称：“这个病例很严重。但",
+          "suffix": "我们的医疗系统运作良好，请大家放心。”",
+          "cut_token": 10
+        },
+        "ja": {
+          "full": "彼はさらに続けて、「この事件は深刻ですが、システムは正常に機能しているのでご安心ください」と述べました。",
+          "prefix": "彼はさらに続けて、「この事件は深刻ですが、システムは",
+          "suffix": "正常に機能しているのでご安心ください」と述べました。",
+          "cut_token": 13
+        },
+        "ko": {
+          "full": "\"그는 \"\"이건 심각한 사건입니다. 다행히도 우리 시스템이 잘 작동하고 있으니 안심하셔도 됩니다.\"\"라고 말을 이었다.\"",
+          "prefix": "\"그는 \"\"이건 심각한 사건입니다. 다행히도 우리 시스템이",
+          "suffix": " 잘 작동하고 있으니 안심하셔도 됩니다.\"\"라고 말을 이었다.\"",
+          "cut_token": 21
+        }
+      }
+    },
+    {
+      "flores_index": 153,
+      "languages": {
+        "en": {
+          "full": "David Headley's scouting and information gathering had helped to enable the operation by the 10 gunmen from the Pakistani militant group Laskhar-e-Taiba.",
+          "prefix": "David Headley's scouting and information gathering had helped to enable the operation by the 10",
+          "suffix": " gunmen from the Pakistani militant group Laskhar-e-Taiba.",
+          "cut_token": 21
+        },
+        "fr": {
+          "full": "Le repérage et la collecte d'informations par David Headley ont facilité l'opération menée par les dix hommes armés du groupe militant pakistanais Laskhar-e-Taiba.",
+          "prefix": "Le repérage et la collecte d'informations par David Headley ont facilité l'opération men",
+          "suffix": "ée par les dix hommes armés du groupe militant pakistanais Laskhar-e-Taiba.",
+          "cut_token": 21
+        },
+        "de": {
+          "full": "David Headleys Auskundschaften und Informationsbeschaffung hatten dazu beigetragen, die Aktion der 10 Schützen der pakistanischen militanten Gruppe Laskhar-e-Taiba zu ermöglichen.",
+          "prefix": "David Headleys Auskundschaften und Informationsbeschaffung hatten dazu beigetragen, die Aktion der 10",
+          "suffix": " Schützen der pakistanischen militanten Gruppe Laskhar-e-Taiba zu ermöglichen.",
+          "cut_token": 23
+        },
+        "es": {
+          "full": "El estudio de campo y la recolección de datos hechos por David Headley facilitó el ataque perpetrado por los 10 hombres armados de la facción militante paquistaní Ejército de los Puros.",
+          "prefix": "El estudio de campo y la recolección de datos hechos por David Headley facilitó el ataque perpetrado",
+          "suffix": " por los 10 hombres armados de la facción militante paquistaní Ejército de los Puros.",
+          "cut_token": 22
+        },
+        "zh": {
+          "full": "戴维·黑德利（David Headley）的侦察和情报搜集工作，促使巴基斯坦激进组织虔诚军（Laskhar-e-Taiba）的 10 名枪手发动这次行动。",
+          "prefix": "戴维·黑德利（David Headley）的侦察和情报搜集工作，促使巴基斯坦",
+          "suffix": "激进组织虔诚军（Laskhar-e-Taiba）的 10 名枪手发动这次行动。",
+          "cut_token": 26
+        },
+        "ja": {
+          "full": "デビッド・ヘッドリーの偵察と情報収集は、パキスタンの過激派集団であるラシュカレ・タイバから送り込まれた10人の狙撃手による作戦の成功に役立ちました。",
+          "prefix": "デビッド・ヘッドリーの偵察と情報収集は、パキスタンの過激派集団であるラ",
+          "suffix": "シュカレ・タイバから送り込まれた10人の狙撃手による作戦の成功に役立ちました。",
+          "cut_token": 24
+        },
+        "ko": {
+          "full": "데이빗 헤들리가 정찰하고 수집한 정보 덕분에 파키스탄 무장 단체인 라슈카르 이 타이바 (Laskhar-e-Taiba)의 무장 강도 작전이 가능했다.",
+          "prefix": "데이빗 헤들리가 정찰하고 수집한 정보 덕분에 파키스탄 무장 단체인 라",
+          "suffix": "슈카르 이 타이바 (Laskhar-e-Taiba)의 무장 강도 작전이 가능했다.",
+          "cut_token": 28
+        }
+      }
+    },
+    {
+      "flores_index": 154,
+      "languages": {
+        "en": {
+          "full": "There are infinite variations possible, but this remains what most people mean when they talk of \"going to Disney World\".",
+          "prefix": "There are infinite variations possible, but this remains what most",
+          "suffix": " people mean when they talk of \"going to Disney World\".",
+          "cut_token": 12
+        },
+        "fr": {
+          "full": "Une infinité de variations sont possibles, mais c’est ce qu’entendent la plupart des gens lorsqu’ils parlent d’« aller à Disney World ».",
+          "prefix": "Une infinité de variations sont possibles, mais c’est ce qu’entendent",
+          "suffix": " la plupart des gens lorsqu’ils parlent d’« aller à Disney World ».",
+          "cut_token": 18
+        },
+        "de": {
+          "full": "\"Es sind unzählige Varianten möglich, aber dies ist es, was die meisten Leute meinen, wenn sie von einer \"\"Reise zur Disney World\"\" sprechen.\"",
+          "prefix": "\"Es sind unzählige Varianten möglich, aber dies ist es, was",
+          "suffix": " die meisten Leute meinen, wenn sie von einer \"\"Reise zur Disney World\"\" sprechen.\"",
+          "cut_token": 16
+        },
+        "es": {
+          "full": "Existen infinitas variantes posibles, pero esto continúa siendo a lo que la mayoría de la gente se refiere cuando habla de «ir a Disneylandia».",
+          "prefix": "Existen infinitas variantes posibles, pero esto continúa siendo a lo que la",
+          "suffix": " mayoría de la gente se refiere cuando habla de «ir a Disneylandia».",
+          "cut_token": 15
+        },
+        "zh": {
+          "full": "迪士尼的玩法有无数种，但对大多数人来说，“去迪士尼乐园”就是这个意思。",
+          "prefix": "迪士尼的玩法有无数种，但对大多数",
+          "suffix": "人来说，“去迪士尼乐园”就是这个意思。",
+          "cut_token": 11
+        },
+        "ja": {
+          "full": "無限のバリエーションがありますが、ほとんどの人にとって「ディズニーワールドに行く」ことを話題にしていることに変わりはないのです。",
+          "prefix": "無限のバリエーションがありますが、ほとんどの人にとって「ディズニー",
+          "suffix": "ワールドに行く」ことを話題にしていることに変わりはないのです。",
+          "cut_token": 11
+        },
+        "ko": {
+          "full": "\"물론 이외에 다양한 방법으로 다녀올 수 있겠지만, 이는 여전히 대부분의 사람들이 \"\"디즈니 월드에 갈 거야\"\"라고 했을 때의 전형적인 여행 방법입니다.\"",
+          "prefix": "\"물론 이외에 다양한 방법으로 다녀올 수 있겠지만, 이는 여전히 대부분",
+          "suffix": "의 사람들이 \"\"디즈니 월드에 갈 거야\"\"라고 했을 때의 전형적인 여행 방법입니다.\"",
+          "cut_token": 27
+        }
+      }
+    }
+  ]
+}
