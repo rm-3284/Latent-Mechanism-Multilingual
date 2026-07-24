@@ -1,10 +1,15 @@
 import argparse
 import copy
+import fcntl
 import heapq
 import json
 import logging
+import os
+import random
+import time
 import requests
 import torch
+from collections import Counter
 from typing import Optional
 
 from circuit_tracer_import import Graph, ReplacementModel, attribute, prune_graph
@@ -58,19 +63,13 @@ def path_to_edge_weights(graph: Graph, path: list[int]) -> list[float]:
     return weights
 
 # Find distinct high-throughput paths using iterative widest-path extraction.
-def distinct_path_max_bottleneck(
-        graph: Graph, token_idx: int, logit_idx: int,
-        throughput_threshold: float = 0.1,
-        node_threshold: float = 0.8, edge_threshold: float = 0.98,
-        MAX_ITERATIONS: int = 75,
-        ) -> list[list[int]]:
-
-    if throughput_threshold < 0:
-        raise ValueError('The throughput threshold cannot be negative')
-    if MAX_ITERATIONS <= 0:
-        raise ValueError('The maximum number of iterations have to be positive')
-
-    pruned_adjacency_matrix = copy.deepcopy(graph.adjacency_matrix)
+def build_pruned_adjacency_base(
+    graph: Graph,
+    node_threshold: float,
+    edge_threshold: float,
+) -> torch.Tensor:
+    """Precompute node/edge-pruned adjacency once per graph for path finding."""
+    pruned_adjacency_matrix = graph.adjacency_matrix.clone()
     node_mask, edge_mask, _ = prune_graph(graph, node_threshold, edge_threshold)
     n, _ = pruned_adjacency_matrix.shape
 
@@ -80,9 +79,29 @@ def distinct_path_max_bottleneck(
             pruned_adjacency_matrix[:, i] = 0.0
     pruned_adjacency_matrix = pruned_adjacency_matrix * edge_mask.float()
 
-    # Keep only positive-capacity edges.
-    negative_values = (pruned_adjacency_matrix > 0).float()
-    pruned_adjacency_matrix = pruned_adjacency_matrix * negative_values
+    positive_values = (pruned_adjacency_matrix > 0).float()
+    return pruned_adjacency_matrix * positive_values
+
+
+def distinct_path_max_bottleneck(
+        graph: Graph, token_idx: int, logit_idx: int,
+        throughput_threshold: float = 0.1,
+        node_threshold: float = 0.8, edge_threshold: float = 0.98,
+        MAX_ITERATIONS: int = 75,
+        pruned_adjacency_base: torch.Tensor | None = None,
+        ) -> list[list[int]]:
+
+    if throughput_threshold < 0:
+        raise ValueError('The throughput threshold cannot be negative')
+    if MAX_ITERATIONS <= 0:
+        raise ValueError('The maximum number of iterations have to be positive')
+
+    if pruned_adjacency_base is None:
+        pruned_adjacency_matrix = build_pruned_adjacency_base(
+            graph, node_threshold, edge_threshold
+        )
+    else:
+        pruned_adjacency_matrix = pruned_adjacency_base.clone()
 
     start_node_idx = token_to_idx(graph, token_idx)
     target_node_idx = logit_to_idx(graph, logit_idx)
@@ -91,7 +110,8 @@ def distinct_path_max_bottleneck(
     pruned_adjacency_matrix[target_node_idx, start_node_idx] = 0
 
     # This mutable copy removes internal nodes after each discovered path.
-    matrix_for_distinct_paths = copy.deepcopy(pruned_adjacency_matrix)
+    matrix_for_distinct_paths = pruned_adjacency_matrix.clone()
+    n, _ = matrix_for_distinct_paths.shape
 
     paths = []
     iteration_counter = 0
@@ -163,8 +183,13 @@ def paths_list(*paths_lsts: list[list[int]]) -> list[list[int]]:
             path_sets.append(path)
     return path_sets
 
-def create_feature_dict(graph: Graph, paths: list[list[int]]) -> dict[str, str]:
+def create_feature_dict(
+    graph: Graph,
+    paths: list[list[int]],
+    model: str = "gemma-2-2b",
+) -> dict[str, str]:
     feature_dict = dict()
+    url_template = neuronpedia_urls[model]
 
     for path in paths:
         features = path[1:-1]
@@ -172,9 +197,11 @@ def create_feature_dict(graph: Graph, paths: list[list[int]]) -> dict[str, str]:
             layer, pos, feature_idx = graph.active_features[graph.selected_features[feature]]
             key = f"{layer.item()}.{feature_idx.item()}"
             if feature_dict.get(key) is None:
-                response = requests.get(f"https://www.neuronpedia.org/api/feature/gemma-2-2b/{layer}-gemmascope-transcoder-16k/{feature_idx}")
-                explanations = response.json()['explanations']
-                description = explanations[0]['description']
+                response = requests.get(
+                    url_template.format(layer=layer.item(), feature_idx=feature_idx.item())
+                )
+                explanations = response.json().get("explanations", [])
+                description = explanations[0]["description"] if explanations else ""
                 feature_dict[key] = description
 
     return feature_dict
@@ -187,7 +214,13 @@ def prune_paths_by_first_last(graph: Graph, paths: list[list[int]], threshold_fi
             pruned_paths.append(path)
     return pruned_paths
 
-def paths_set_to_json(graph: Graph, paths: list[list[int]], filename: Optional[str] = None, feature_dict: Optional[dict[str, str]] = None) -> dict[str, str]:
+def paths_set_to_json(
+    graph: Graph,
+    paths: list[list[int]],
+    filename: Optional[str] = None,
+    feature_dict: Optional[dict[str, str]] = None,
+    model: str = "gemma-2-2b",
+) -> dict[str, str]:
     feature_set = set()
     for path in paths:
         middle = path[1:-1]
@@ -211,9 +244,12 @@ def paths_set_to_json(graph: Graph, paths: list[list[int]], filename: Optional[s
             description_dict[description_key] = description
         except KeyError:
             try:
-                response = requests.get(f"https://www.neuronpedia.org/api/feature/gemma-2-2b/{layer}-gemmascope-transcoder-16k/{feature_idx}")
-                explanations = response.json()['explanations']
-                description = explanations[0]['description']
+                url_template = neuronpedia_urls[model]
+                response = requests.get(
+                    url_template.format(layer=layer, feature_idx=feature_idx)
+                )
+                explanations = response.json().get("explanations", [])
+                description = explanations[0]["description"] if explanations else ""
                 feature_dict[feature_dict_key] = description
                 description_dict[description_key] = description
             except TypeError:
@@ -231,6 +267,184 @@ def find_substring(hay: str, needles: list[str]) -> bool:
             return True
     return False
 
+
+def neuronpedia_api_lock_path() -> str:
+    return os.environ.get(
+        "NEURONPEDIA_API_LOCK",
+        "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/cache/neuronpedia_api.lock",
+    )
+
+
+def neuronpedia_description_cache_path(model: str) -> str:
+    cache_dir = os.environ.get(
+        "NEURONPEDIA_DESCRIPTION_CACHE_DIR",
+        "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/cache/neuronpedia_descriptions",
+    )
+    os.makedirs(cache_dir, exist_ok=True)
+    return os.path.join(cache_dir, f"{model}_descriptions.json")
+
+
+def load_neuronpedia_description_cache(cache_path: str) -> dict[str, str]:
+    if not os.path.exists(cache_path):
+        return {}
+    with open(cache_path, "r") as f:
+        return json.load(f)
+
+
+def lookup_neuronpedia_description_cache(cache_path: str, key: str) -> str | None:
+    """Read one cached description, reloading from disk under a shared lock."""
+    cache_lock_path = f"{cache_path}.lock"
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_lock_path, "w") as lock_file:
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
+        return load_neuronpedia_description_cache(cache_path).get(key)
+
+
+def store_neuronpedia_description_cache(
+    cache_path: str,
+    key: str,
+    description: str,
+) -> None:
+    """Persist one description so other jobs can reuse it immediately."""
+    cache_lock_path = f"{cache_path}.lock"
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_lock_path, "w") as lock_file:
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
+        merged = load_neuronpedia_description_cache(cache_path)
+        merged[key] = description
+        save_neuronpedia_description_cache(cache_path, merged)
+
+
+def save_neuronpedia_description_cache(cache_path: str, descriptions: dict[str, str]) -> None:
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    tmp_path = f"{cache_path}.tmp"
+    with open(tmp_path, "w") as f:
+        json.dump(descriptions, f, indent=2)
+    os.replace(tmp_path, cache_path)
+
+
+def _retry_delay_seconds(
+    attempt: int,
+    *,
+    response: requests.Response | None = None,
+    base_delay: float,
+    max_delay: float,
+) -> float:
+    if response is not None and response.status_code == 429:
+        retry_after = response.headers.get("Retry-After")
+        if retry_after is not None:
+            try:
+                return min(max(float(retry_after), base_delay), max_delay) + random.uniform(0, 1)
+            except ValueError:
+                pass
+        return min(base_delay * (2 ** (attempt + 2)), max_delay) + random.uniform(0, 2)
+    return min(base_delay * (2 ** attempt), max_delay) + random.uniform(0, 1)
+
+
+def fetch_neuronpedia_description(
+    url: str,
+    headers: dict[str, str],
+    key: str,
+    *,
+    timeout: float = 30.0,
+    max_retries: int = 16,
+    base_delay: float = 2.0,
+    max_delay: float = 120.0,
+    min_interval: float = 0.35,
+) -> str:
+    """Fetch a feature description from Neuronpedia with global throttling and retries."""
+    lock_path = neuronpedia_api_lock_path()
+    os.makedirs(os.path.dirname(lock_path), exist_ok=True)
+    last_error: requests.exceptions.RequestException | None = None
+
+    with open(lock_path, "w") as lock_file:
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
+        for attempt in range(max_retries):
+            try:
+                response = requests.get(url, headers=headers, timeout=timeout)
+                if response.status_code == 429:
+                    delay = _retry_delay_seconds(
+                        attempt,
+                        response=response,
+                        base_delay=base_delay,
+                        max_delay=max_delay,
+                    )
+                    logger.warning(
+                        "Neuronpedia rate-limited for %s (attempt %d/%d); retrying in %.1fs",
+                        key,
+                        attempt + 1,
+                        max_retries,
+                        delay,
+                    )
+                    time.sleep(delay)
+                    continue
+                response.raise_for_status()
+                response_json = response.json()
+                explanations = response_json.get("explanations", [])
+                time.sleep(min_interval)
+                if not explanations:
+                    return ""
+                return explanations[0]["description"]
+            except requests.exceptions.HTTPError as exc:
+                last_error = exc
+                if exc.response is not None and exc.response.status_code == 429:
+                    if attempt + 1 >= max_retries:
+                        break
+                    delay = _retry_delay_seconds(
+                        attempt,
+                        response=exc.response,
+                        base_delay=base_delay,
+                        max_delay=max_delay,
+                    )
+                    logger.warning(
+                        "Neuronpedia rate-limited for %s (attempt %d/%d); retrying in %.1fs",
+                        key,
+                        attempt + 1,
+                        max_retries,
+                        delay,
+                    )
+                    time.sleep(delay)
+                    continue
+                if attempt + 1 >= max_retries:
+                    break
+                delay = _retry_delay_seconds(
+                    attempt,
+                    response=exc.response,
+                    base_delay=base_delay,
+                    max_delay=max_delay,
+                )
+                logger.warning(
+                    "Neuronpedia request failed for %s (attempt %d/%d): %s; retrying in %.1fs",
+                    key,
+                    attempt + 1,
+                    max_retries,
+                    exc,
+                    delay,
+                )
+                time.sleep(delay)
+            except requests.exceptions.RequestException as exc:
+                last_error = exc
+                if attempt + 1 >= max_retries:
+                    break
+                delay = _retry_delay_seconds(
+                    attempt,
+                    base_delay=base_delay,
+                    max_delay=max_delay,
+                )
+                logger.warning(
+                    "Neuronpedia request failed for %s (attempt %d/%d): %s; retrying in %.1fs",
+                    key,
+                    attempt + 1,
+                    max_retries,
+                    exc,
+                    delay,
+                )
+                time.sleep(delay)
+
+    assert last_error is not None
+    logger.error("HTTP request failed for %s after %d attempts: %s", key, max_retries, last_error)
+    raise last_error
+
 def pick_last_pos_features(graph: Graph, paths: list[list[int]]) -> list[tuple[int, int]]:
     feature_list = []
     n_pos = graph.n_pos
@@ -247,52 +461,67 @@ def pick_last_pos_features(graph: Graph, paths: list[list[int]]) -> list[tuple[i
 
     return feature_list
 
-def choose_language_features(features: list[tuple[int, int]], language_identifiers: list[str], feature_dict: Optional[dict[str, str]] = None, model: str = 'gemma-2-2b') -> tuple[dict[str, int], dict[str, str]]:
+def choose_language_features(
+    features: list[tuple[int, int]],
+    language_identifiers: list[str],
+    feature_dict: Optional[dict[str, str]] = None,
+    model: str = "gemma-2-2b",
+    description_cache_path: str | None = None,
+) -> tuple[dict[str, int], dict[str, str]]:
     lang_feature_dict = dict()
-    feature_description_dict = feature_dict if feature_dict is not None else dict()
+    cache_path = description_cache_path or neuronpedia_description_cache_path(model)
+    feature_description_dict = dict(load_neuronpedia_description_cache(cache_path))
+    if feature_dict is not None:
+        feature_description_dict.update(feature_dict)
     headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
     }
-    
-    # Get model-specific API URL template
+
     if model not in neuronpedia_urls:
-        raise ValueError(f"Model '{model}' not found in available models. Available: {list(neuronpedia_urls.keys())}")
+        raise ValueError(
+            f"Model '{model}' not found in available models. Available: {list(neuronpedia_urls.keys())}"
+        )
     url_template = neuronpedia_urls[model]
-    
-    for layer, feature_idx in features:
-        key = f'{layer}.{feature_idx}'
-        
-        try:
-            description = feature_description_dict[key]
-        except KeyError:
+    feature_counts = Counter((layer, feature_idx) for layer, feature_idx in features)
+
+    for layer, feature_idx in feature_counts:
+        key = f"{layer}.{feature_idx}"
+
+        description = feature_description_dict.get(key)
+        if not description:
+            cached = lookup_neuronpedia_description_cache(cache_path, key)
+            if cached:
+                description = cached
+                feature_description_dict[key] = description
+
+        if not description:
             try:
                 url = url_template.format(layer=layer, feature_idx=feature_idx)
                 logger.info(f"Fetching feature description from: {url}")
-                response = requests.get(url, headers=headers)
-                response.raise_for_status()
-                response_json = response.json()
-                logger.debug(f"API response for {key}: {response_json}")
-                explanations = response_json['explanations']
-                description = explanations[0]['description']
-                feature_description_dict[key] = description
+                description = fetch_neuronpedia_description(url, headers, key)
                 logger.info(f"Successfully fetched description for {key}")
-            except requests.exceptions.RequestException as e:
-                logger.error(f"HTTP request failed for {key}: {e}")
+                store_neuronpedia_description_cache(cache_path, key, description)
+                feature_description_dict[key] = description
+            except requests.exceptions.RequestException:
                 raise
             except KeyError as e:
-                logger.error(f"Missing key in API response for {key}: {e}. Response was: {response.text}")
+                logger.error(
+                    "Missing key in API response for %s: %s",
+                    key,
+                    e,
+                )
                 raise
             except TypeError:
                 raise TypeError(f"Layer {layer}, feature {feature_idx} does not exist")
-            except IndexError:
-                logger.warning(f"No descriptions found in API response for {key}")
-                description = ""
-                
+
+    for (layer, feature_idx), count in feature_counts.items():
+        key = f"{layer}.{feature_idx}"
+        description = feature_description_dict[key]
         if find_substring(description, language_identifiers):
-            if lang_feature_dict.get(key) is None:
-                lang_feature_dict[key] = 1
-            else:
-                lang_feature_dict[key] = lang_feature_dict[key] + 1
+            lang_feature_dict[key] = lang_feature_dict.get(key, 0) + count
 
     return lang_feature_dict, feature_description_dict
 
@@ -349,6 +578,7 @@ def parse_args():
                         choices=list(neuronpedia_urls.keys()),
                         help='Model to use for feature extraction')
     parser.add_argument('--lang', type=str, default=None, choices=langs_big, help='Language to extract features for')
+    parser.add_argument('--data-dir', type=str, default=None, help='Override flores_features directory')
     return parser.parse_args()
 
 if __name__ == '__main__':
@@ -367,7 +597,7 @@ if __name__ == '__main__':
     current_file_path = __file__
     current_directory = os.path.dirname(current_file_path)
     absolute_directory = os.path.abspath(current_directory)
-    data_directory = os.path.join(os.path.dirname(absolute_directory), "data", "flores_features", model)
+    data_directory = args.data_dir or os.path.join(os.path.dirname(absolute_directory), "data", "flores_features", model)
     if not os.path.exists(data_directory):
         os.makedirs(data_directory)
 

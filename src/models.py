@@ -12,7 +12,7 @@ hf_transcoder_names = {
 }
 base_neuronpeida_url = 'https://www.neuronpedia.org/api/feature/'
 neuronpedia_urls = {
-    'gemma-2-2b': base_neuronpeida_url + 'gemma-2-2b/{layer}-clt-hp/{feature_idx}',
+    'gemma-2-2b': base_neuronpeida_url + 'gemma-2-2b/{layer}-gemmascope-transcoder-16k/{feature_idx}',
     'qwen3-4b': base_neuronpeida_url + 'qwen3-4b/{layer}-transcoder-hp/{feature_idx}',
     'gemma-3-4b-it': base_neuronpeida_url + 'gemma-3-4b-it/{layer}-gemmascope-2-transcoder-262k/{feature_idx}',
     'gemma-2-2b-pt': base_neuronpeida_url + 'gemma-2-2b/{layer}-gemmascope-transcoder-16k/{feature_idx}',

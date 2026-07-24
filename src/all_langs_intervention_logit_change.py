@@ -108,6 +108,16 @@ def parse_args() -> argparse.Namespace:
             "all_langs_intervention_logit_change.csv"
         ),
     )
+    parser.add_argument(
+        "--amplification-outside-ablation-scale",
+        type=float,
+        default=1.0,
+        help=(
+            "Multiply amplification values for latents in {amplification} \\ {ablation} "
+            "(layer,pos,feature in amplification list but not in ablation list). "
+            "Overlap keys still skip amplification (ablation wins). Default 1.0 is legacy behavior."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -195,12 +205,15 @@ def build_method_interventions(
 def combine_interventions_with_ablation_priority(
     ablation_interventions: list[tuple[int, int, int, torch.Tensor]],
     amplification_interventions: list[tuple[int, int, int, torch.Tensor]],
+    amplification_outside_ablation_scale: float = 1.0,
 ) -> list[tuple[int, int, int, torch.Tensor]]:
     ablation_feature_keys = {(layer, pos, feature_idx) for layer, pos, feature_idx, _ in ablation_interventions}
     combined = list(ablation_interventions)
     for layer, pos, feature_idx, value in amplification_interventions:
         if (layer, pos, feature_idx) in ablation_feature_keys:
             continue
+        if amplification_outside_ablation_scale != 1.0:
+            value = value * amplification_outside_ablation_scale
         combined.append((layer, pos, feature_idx, value))
     return combined
 
@@ -298,6 +311,7 @@ def run_experiment(args: argparse.Namespace) -> str:
                             combined_interventions = combine_interventions_with_ablation_priority(
                                 ablation_interventions,
                                 amplification_interventions,
+                                amplification_outside_ablation_scale=args.amplification_outside_ablation_scale,
                             )
 
                             _, intervened_logits = model_intervention(
@@ -350,6 +364,7 @@ def run_experiment(args: argparse.Namespace) -> str:
                                         "baseline_target_minus_base": baseline_target_minus_base,
                                         "intervened_target_minus_base": intervened_target_minus_base,
                                         "delta_target_minus_base": intervened_target_minus_base - baseline_target_minus_base,
+                                        "amplification_outside_ablation_scale": args.amplification_outside_ablation_scale,
                                     }
                                     rows.append(row)
                                     pair_key = (prompt_lang, adj_lang)
@@ -380,6 +395,7 @@ def run_experiment(args: argparse.Namespace) -> str:
         "baseline_target_minus_base",
         "intervened_target_minus_base",
         "delta_target_minus_base",
+        "amplification_outside_ablation_scale",
     ]
 
     if output_file is not None:
@@ -397,6 +413,11 @@ def run_experiment(args: argparse.Namespace) -> str:
         model_name,
     )
     written_files: list[str] = []
+    scale_suffix = ""
+    if args.amplification_outside_ablation_scale != 1.0:
+        scale_suffix = "__amp_nonoverlap_scale_" + str(args.amplification_outside_ablation_scale).replace(
+            ".", "p"
+        )
     for (prompt_lang, adj_lang), pair_rows in sorted(rows_by_lang_pair.items()):
         pair_dir = os.path.join(base_output_dir, prompt_lang, adj_lang)
         os.makedirs(pair_dir, exist_ok=True)
@@ -406,7 +427,7 @@ def run_experiment(args: argparse.Namespace) -> str:
             (
                 "all_langs_intervention_logit_change"
                 f"__intervention_{intervention_lang_label}"
-                f"__measure_{measure_lang_label}.csv"
+                f"__measure_{measure_lang_label}{scale_suffix}.csv"
             ),
         )
 
