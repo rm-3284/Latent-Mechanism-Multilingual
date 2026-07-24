@@ -1,0 +1,42 @@
+feature,annotation_match_count,description
+24.15163,983,Chinese characters related to dictionaries and language processing
+23.13630,960, HTML-like code and certain Chinese words related to message sending
+22.11933,910, text and code snippets that occur in Chinese contexts
+24.406,902," non-English characters, especially Chinese and Japanese"
+24.4818,696,"XML tags, especially those related to including headers/footers, as well as Chinese language related to sending content"
+24.8105,593," Chinese words related to weather, and some English words related to dictionaries or compilation, and programming"
+25.3889,458,"Chinese and code-related terms, possibly related to dictionary compilation or UTF encoding"
+25.2586,427, Chinese language related terms and code compilation
+24.10584,411, code snippets with file descriptions in Chinese
+25.13194,362,"Chinese text related to dictionaries, code compilation, and programming"
+22.5475,348, Chinese characters related to dictionaries and character encoding
+23.10329,345," mentions of locations in China, possibly focusing on ""Liushan""."
+25.13332,293," Chinese place names with 山 in them, often followed by parentheses"
+25.12396,279, Chinese weather data terms
+25.1383,260, Chinese characters and code snippets
+20.15292,258," comments and source code in Chinese and PHP, along with related terms such as ""dictionary"" and ""compilation."""
+20.12983,251, Chinese characters related to dictionaries and code
+22.2771,246," Chinese place names, specifically those including ""山"" (mountain), often within parentheses"
+19.13796,220,"words in documentation files, especially technical ones, including code snippets and Chinese characters"
+25.7459,213," Chinese characters describing dictionary compilation, especially suffixes and prefixes related to place names, math units, surnames, and regions"
+24.12218,204, Chinese characters enclosed in parentheses and also HTML-like tags and attributes
+22.13782,203, content related to Chinese geography and weather data
+23.4219,194," text snippets in Japanese, possibly related to computing and error messages, or Chinese place names and historical figures."
+23.6408,178, Chinese text and location names in China.
+25.10239,173," Chinese characters and related terms, possibly in the context of dictionary compilation or language analysis"
+25.14824,173, chinese place names that contain 山
+25.11226,170, Chinese characters and HTML elements/attributes related to sending a message
+25.3393,170," a mix of Chinese characters, SEO terms, and references to Chinese geography or history"
+21.9624,161," code snippets, programming terms and Chinese characters"
+23.2587,161, Chinese text related to dictionary compilation and PHP analysis
+19.10598,158,"Chinese text related to dictionaries and compilation, possibly in the context of programming."
+23.5956,155,"Chinese characters, especially related to place names and weather"
+23.11007,151, Chinese characters and words involved in sending messages and/or Chinese dictonary terms
+24.3774,151, Chinese words and related dictionary files and compilation
+24.10588,149, Chinese geographical locations and XML code
+21.7117,147, Chinese text related to file descriptions and properties of words
+18.4982,143,Chinese text and code snippets about dictionaries
+20.15712,141," words related to weather, Chinese characters, and programming files/tutorials"
+22.10588,136," angle brackets, the characters 'xml', and some words related to programming and scripts, along with some Chinese characters indicating it also detects code in Chinese."
+23.7712,131, Chinese characters and related terms
+21.1128,129," the start of explanations or lists, as well as Chinese text, possibly related to dictionaries or encoding"

@@ -1,0 +1,995 @@
+{
+  "model": "gemma-2-2b",
+  "languages": [
+    "en"
+  ],
+  "num_sentences": 100,
+  "tracing_defaults": {
+    "throughput_threshold": 0.1,
+    "node_threshold": 0.8,
+    "edge_threshold": 0.98,
+    "threshold_first": 0.5,
+    "threshold_last": 0.25,
+    "max_iterations": 75
+  },
+  "selection_threshold": 0.1,
+  "selected_features_dir": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features",
+  "sweeps": {
+    "AnnSel_tracing_node_threshold": [
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.7,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 55420,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.7__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 18
+        },
+        "total_features": 18,
+        "mean_features_per_lang": 18.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 18,
+            "matched": 18
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.9
+        },
+        "mean_jaccard_vs_default": 0.9
+      },
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.95,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57635,
+        "annotation_candidates_total": 71,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.95__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.9047619047619048
+        },
+        "mean_jaccard_vs_default": 0.9047619047619048
+      },
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.6,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 49255,
+        "annotation_candidates_total": 56,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.6__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 16
+        },
+        "total_features": 16,
+        "mean_features_per_lang": 16.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 16,
+            "matched": 16
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.8
+        },
+        "mean_jaccard_vs_default": 0.8
+      },
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.75,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 56692,
+        "annotation_candidates_total": 72,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.75__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 18
+        },
+        "total_features": 18,
+        "mean_features_per_lang": 18.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 18,
+            "matched": 18
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.9
+        },
+        "mean_jaccard_vs_default": 0.9
+      },
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": true,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0
+      },
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.85,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57459,
+        "annotation_candidates_total": 69,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.85__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 19
+        },
+        "total_features": 19,
+        "mean_features_per_lang": 19.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 19,
+            "matched": 19
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.8571428571428571
+        },
+        "mean_jaccard_vs_default": 0.8571428571428571
+      },
+      {
+        "sweep_axis": "node_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.9,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57560,
+        "annotation_candidates_total": 71,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_node_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.9__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.9047619047619048
+        },
+        "mean_jaccard_vs_default": 0.9047619047619048
+      }
+    ],
+    "AnnSel_tracing_edge_threshold": [
+      {
+        "sweep_axis": "edge_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.9,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57160,
+        "annotation_candidates_total": 71,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_edge_threshold__edge_threshold_0.9__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "edge_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.92,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57196,
+        "annotation_candidates_total": 71,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_edge_threshold__edge_threshold_0.92__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "edge_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.95,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57227,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_edge_threshold__edge_threshold_0.95__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "edge_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": true,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_edge_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0
+      },
+      {
+        "sweep_axis": "edge_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.99,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57260,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_edge_threshold__edge_threshold_0.99__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 19
+        },
+        "total_features": 19,
+        "mean_features_per_lang": 19.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 19,
+            "matched": 19
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.95
+        },
+        "mean_jaccard_vs_default": 0.95
+      }
+    ],
+    "AnnSel_tracing_threshold_first": [
+      {
+        "sweep_axis": "threshold_first",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.4,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 58636,
+        "annotation_candidates_total": 73,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_first__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.4__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "threshold_first",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.3,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 59263,
+        "annotation_candidates_total": 73,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_first__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.3__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "threshold_first",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": true,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_first__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0
+      },
+      {
+        "sweep_axis": "threshold_first",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.6,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 55331,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_first__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.6__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "threshold_first",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.7,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 52754,
+        "annotation_candidates_total": 68,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_first__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.7__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 18
+        },
+        "total_features": 18,
+        "mean_features_per_lang": 18.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 18,
+            "matched": 18
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.9
+        },
+        "mean_jaccard_vs_default": 0.9
+      }
+    ],
+    "AnnSel_tracing_threshold_last": [
+      {
+        "sweep_axis": "threshold_last",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": true,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0
+      },
+      {
+        "sweep_axis": "threshold_last",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.3,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 48132,
+        "annotation_candidates_total": 58,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.3__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 17
+        },
+        "total_features": 17,
+        "mean_features_per_lang": 17.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 17,
+            "matched": 17
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.85
+        },
+        "mean_jaccard_vs_default": 0.85
+      },
+      {
+        "sweep_axis": "threshold_last",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.35,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 41517,
+        "annotation_candidates_total": 53,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.35__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 15
+        },
+        "total_features": 15,
+        "mean_features_per_lang": 15.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 15,
+            "matched": 15
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.75
+        },
+        "mean_jaccard_vs_default": 0.75
+      },
+      {
+        "sweep_axis": "threshold_last",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.2,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 70481,
+        "annotation_candidates_total": 80,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.2__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 21
+        },
+        "total_features": 21,
+        "mean_features_per_lang": 21.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 21,
+            "matched": 21
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.5769230769230769
+        },
+        "mean_jaccard_vs_default": 0.5769230769230769
+      },
+      {
+        "sweep_axis": "threshold_last",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.15,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 89243,
+        "annotation_candidates_total": 92,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.15__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 19
+        },
+        "total_features": 19,
+        "mean_features_per_lang": 19.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 19,
+            "matched": 19
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.56
+        },
+        "mean_jaccard_vs_default": 0.56
+      },
+      {
+        "sweep_axis": "threshold_last",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.1,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 112824,
+        "annotation_candidates_total": 120,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_threshold_last__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.1__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 28
+        },
+        "total_features": 28,
+        "mean_features_per_lang": 28.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 28,
+            "matched": 28
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 0.37142857142857144
+        },
+        "mean_jaccard_vs_default": 0.37142857142857144
+      }
+    ],
+    "AnnSel_tracing_throughput_threshold": [
+      {
+        "sweep_axis": "throughput_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.05,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_throughput_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.05__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "throughput_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.075,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_throughput_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.075__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "throughput_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.1,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": true,
+        "raw_traced_features_total": 57257,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_throughput_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.1__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0
+      },
+      {
+        "sweep_axis": "throughput_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.15,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57240,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_throughput_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.15__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "throughput_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.2,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57226,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_throughput_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.2__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      },
+      {
+        "sweep_axis": "throughput_threshold",
+        "hyperparameters": {
+          "throughput_threshold": 0.25,
+          "node_threshold": 0.8,
+          "edge_threshold": 0.98,
+          "threshold_first": 0.5,
+          "threshold_last": 0.25,
+          "max_iterations": 75
+        },
+        "selection_threshold": 0.1,
+        "is_default": false,
+        "raw_traced_features_total": 57173,
+        "annotation_candidates_total": 70,
+        "selected_features_file": "/n/fs/vision-mix/rm4411/Latent-Mechanism-Multilingual/data/additional_experiments/gemma-2-2b/annsel_tracing_sensitivity/selected_features/AnnSel/tracing_throughput_threshold__edge_threshold_0.98__max_iterations_75__node_threshold_0.8__threshold_first_0.5__threshold_last_0.25__throughput_threshold_0.25__en.json",
+        "method": "AnnSel",
+        "per_lang_counts": {
+          "en": 20
+        },
+        "total_features": 20,
+        "mean_features_per_lang": 20.0,
+        "lang_name_counts": {
+          "en": {
+            "total": 20,
+            "matched": 20
+          }
+        },
+        "mean_lang_name_match_rate": 1.0,
+        "mean_cross_lang_jaccard": 1.0,
+        "jaccard_vs_default": {
+          "en": 1.0
+        },
+        "mean_jaccard_vs_default": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,284 @@
+lang,feature,annotation_match_count,description
+zh,24.15163,983,Chinese characters related to dictionaries and language processing
+ja,22.4400,965," Japanese text related to programming errors, particularly requests for help"
+zh,23.13630,960, HTML-like code and certain Chinese words related to message sending
+de,20.15832,936, sentences in German that uses modal verbs to describe realistic situations
+fr,20.1454,934," words written in French, particularly conversational French used in online forums or chat"
+fr,22.10566,928," French words and internet-related terms, and seems specific to chat or forum-type text."
+es,22.15500,916," Spanish words and programming-related terms, especially those used together"
+ja,24.15582,914, Japanese text and references to it
+zh,22.11933,910, text and code snippets that occur in Chinese contexts
+de,22.10921,903, text in German
+zh,24.406,902," non-English characters, especially Chinese and Japanese"
+ja,24.406,897," non-English characters, especially Chinese and Japanese"
+es,21.7256,879,Spanish language programming questions in Javascript
+fr,23.2592,788, French language and words related to treaties.
+ja,21.9438,782," Japanese sentences expressing humility with ""思います"""
+de,23.7105,781, German language text
+fr,24.3772,738," snippets of conversation about software installation and configuration, and also finds french stopwords"
+ja,24.3321,733, a mix of Japanese and words related to computer software
+zh,24.4818,696,"XML tags, especially those related to including headers/footers, as well as Chinese language related to sending content"
+es,24.13490,689," news casts, TV programs, and names of Spanish-speaking people in Panama"
+ja,17.13839,682," words containing Japanese characters, particularly relating to reporting computer errors and asking for help"
+ja,24.9590,649, Japanese words
+zh,24.8105,593," Chinese words related to weather, and some English words related to dictionaries or compilation, and programming"
+de,24.2089,571," sentences in German containing multiple verbs, especially modal verbs"
+de,19.6380,553," German words, and especially modal verbs"
+fr,24.2086,510," French text with a conversational tone and common words, especially related to computer use and troubleshooting"
+de,25.5206,501," German sentences and grammar, particularly verb constructions and sentence structure."
+de,23.5974,487," German language text, and specifically finds the word ""fände"""
+zh,25.3889,458,"Chinese and code-related terms, possibly related to dictionary compilation or UTF encoding"
+ja,25.11677,457, Japanese computing error messages
+fr,17.10566,440,French short words
+zh,25.2586,427, Chinese language related terms and code compilation
+es,24.3602,421,Spanish words in a Javascript code tutorial
+zh,24.10584,411, code snippets with file descriptions in Chinese
+ja,23.11251,375, Japanese text expressing humility and a request for feedback in a technical context
+es,24.3018,371, a mix of code snippets and spanish/portuguese words
+zh,25.13194,362,"Chinese text related to dictionaries, code compilation, and programming"
+ja,24.3939,354," Japanese text, especially related to programming and error messages"
+zh,22.5475,348, Chinese characters related to dictionaries and character encoding
+de,24.5178,345," sentences discussing verbs or sentence structure, especially in the German language"
+zh,23.10329,345," mentions of locations in China, possibly focusing on ""Liushan""."
+es,24.2024,343, Spanish words
+de,21.5243,339, German language text.
+ja,20.6840,335, Japanese programming error messages and apologies
+ja,20.6380,312," Java-related error messages and associated contextual words, with a focus on Maven and build-related vocabulary, potentially in Japanese."
+ja,25.15066,311, Japanese text and related context like a colon
+de,22.10094,304, German sentences discussing modal verbs
+zh,25.13332,293," Chinese place names with 山 in them, often followed by parentheses"
+es,23.15086,291, words related to JavaScript and technical documentation in Spanish
+ja,23.5452,290, Japanese text describing a coding problem for beginners
+fr,16.10258,279," text in languages other than English like French, Spanish, or Portuguese"
+zh,25.12396,279, Chinese weather data terms
+de,24.5020,270," German sentences involving multiple verbs, especially modal verbs"
+zh,25.1383,260, Chinese characters and code snippets
+es,16.7301,259," Spanish words, particularly those related to programming concepts"
+zh,20.15292,258," comments and source code in Chinese and PHP, along with related terms such as ""dictionary"" and ""compilation."""
+ja,16.11140,253, code-related terms and URLs in Japanese
+zh,20.12983,251, Chinese characters related to dictionaries and code
+zh,22.2771,246," Chinese place names, specifically those including ""山"" (mountain), often within parentheses"
+fr,25.10828,236, words in French related to internet-based communication or software
+ja,24.6876,226," Japanese text and Java-related terms, especially those related to errors and project setup"
+ja,25.6429,226,Japanese language used in a software development context
+de,18.15742,221,German words or words relating to German places and history along with contact and address-related terms
+fr,24.10735,221," French words surrounding instances of ""<username>"""
+ja,25.11896,221, Japanese error messages about Java programs
+ja,19.730,220, words or phrases related to software development and documentation in both Japanese and English
+zh,19.13796,220,"words in documentation files, especially technical ones, including code snippets and Chinese characters"
+zh,25.7459,213," Chinese characters describing dictionary compilation, especially suffixes and prefixes related to place names, math units, surnames, and regions"
+ja,16.7745,208, code snippets and Japanese characters.
+fr,22.11562,207, conversational text about technology with some French mixed in
+zh,24.12218,204, Chinese characters enclosed in parentheses and also HTML-like tags and attributes
+de,24.4641,203, German language text
+zh,22.13782,203, content related to Chinese geography and weather data
+fr,21.16354,198, words and short phrases used in informal French conversations
+fr,23.2554,195," French words and expressions, particularly those used in casual conversation"
+zh,23.4219,194," text snippets in Japanese, possibly related to computing and error messages, or Chinese place names and historical figures."
+de,25.4029,192, German language
+ja,25.7798,184, Japanese text mentioning errors or mistakes in a technical context.
+fr,17.9138,180," french discussion of technical topics, especially about internet and radio"
+de,24.15337,179," German words related to writing a letter and discussing sentence structure, particularly verbs."
+zh,23.6408,178, Chinese text and location names in China.
+de,24.12502,175, various German language words and sentence fragments
+es,17.3396,175, Spanish language snippets and references/links to ECMAScript
+fr,23.10513,174," a mix of numerical digits, some English text, and some French text, specifically related to questions and answers"
+fr,13.15903,173," words and phrases in French, or related to programming, or dealing with questionnaires"
+zh,25.10239,173," Chinese characters and related terms, possibly in the context of dictionary compilation or language analysis"
+zh,25.14824,173, chinese place names that contain 山
+ja,20.13373,170, code related error messages with Japanese mixed in
+zh,25.11226,170, Chinese characters and HTML elements/attributes related to sending a message
+zh,25.3393,170," a mix of Chinese characters, SEO terms, and references to Chinese geography or history"
+fr,20.3376,168," a mix of source code and text in languages other than English, particularly Portuguese and French."
+de,16.6815,167,sentences in German that use many verbs and involve writing a letter
+es,19.9087,166," code snippets and related terms, also with Spanish words mixed in"
+ja,24.9247,166," is finding Japanese text related to programming errors, specifically in a Java/Maven context"
+ja,22.7430,165," code snippets, project names, and URLs alongside japanese words and characters"
+zh,21.9624,161," code snippets, programming terms and Chinese characters"
+zh,23.2587,161, Chinese text related to dictionary compilation and PHP analysis
+ja,19.9555,159, code error messages in Japanese related to Maven Tika
+zh,19.10598,158,"Chinese text related to dictionaries and compilation, possibly in the context of programming."
+de,24.4255,157," German words, especially verbs, related to rules, permissions, and personal experiences"
+ja,18.5475,157, Japanese programming questions and answers.
+zh,23.5956,155,"Chinese characters, especially related to place names and weather"
+de,17.9215,153, German sentences related to writing and grammar
+fr,23.8682,153," French words and phrases, especially those used in online conversation"
+ja,20.15255,153, phrases in Japanese about making mistakes and asking for help
+de,24.5914,151," German sentences containing complex verb phrases with multiple modal verbs and ""Brief"""
+es,24.10901,151, code snippets and/or Spanish words related to programming
+zh,23.11007,151, Chinese characters and words involved in sending messages and/or Chinese dictonary terms
+zh,24.3774,151, Chinese words and related dictionary files and compilation
+de,19.16344,150, sentences related to writing a letter in German
+ja,24.15096,149, Japanese language error reports concerning software
+zh,24.10588,149, Chinese geographical locations and XML code
+fr,23.2388,147, French words related to technology and software
+zh,21.7117,147, Chinese text related to file descriptions and properties of words
+de,25.1077,146, references to German language and grammar
+fr,24.9506,146, mixed French and English internet chat
+de,23.12117,145," German text with modal verbs, especially the word ""man"" and related sentence structure."
+de,24.12939,145," German words, particularly those related to sentence structure and verbs."
+fr,22.5802,145," code snippets, URLs and Linux commands/tutorials in French mixed with English"
+es,19.6232,144, Spanish language content related to programming and numbers
+zh,18.4982,143,Chinese text and code snippets about dictionaries
+de,16.8731,141,"German words related to language, grammar and opinions"
+ja,25.10785,141," Japanese text, specifically the saying ""一をいうと十返ってくる"""
+zh,20.15712,141," words related to weather, Chinese characters, and programming files/tutorials"
+de,24.4493,140, German language text along with some modal verbs and auxiliary verbs
+de,24.14023,139," German words and phrases related to writing and sentences, particularly verbs"
+ja,17.15920,139,"Japanese words related to Maven, Java and errors"
+de,13.13543,136, a mix of German language and lines of code
+de,24.14954,136, German language text
+de,24.2716,136," German sentences with modal verbs, particularly those expressing impossibility or necessity"
+ja,14.869,136, Japanese technical language related to software development and debugging.
+zh,22.10588,136," angle brackets, the characters 'xml', and some words related to programming and scripts, along with some Chinese characters indicating it also detects code in Chinese."
+fr,24.2453,134," text in French, especially in the context of technical instructions"
+es,22.15898,133," Spanish words related to programming concepts such as values, functions, and ECMAScript"
+ja,15.3961,133, words in Japanese related to programming errors and seeking help
+fr,22.3707,132," words that are common in casual conversation and IRC, seemingly in French"
+zh,23.7712,131, Chinese characters and related terms
+fr,20.1828,130, snippets of French text among text of other languages
+de,23.15714,129," German sentences discussing modal verbs, specifically multiple in a row"
+zh,21.1128,129," the start of explanations or lists, as well as Chinese text, possibly related to dictionaries or encoding"
+ja,22.4084,127, Japanese programming error messages or questions about programming errors
+de,16.7458,126, German sentence fragments
+de,23.12670,125, the German language
+fr,24.13478,125, french words and code snippets (likely HTML)
+fr,24.12770,123, text in French about computer issues
+fr,23.9601,122, French text and especially questions or statements about computers or networks
+ja,25.2516,122, Japanese text/characters.
+de,21.4535,121, German text related to opinions and situations
+es,24.4540,121," code snippets and non-English text, particularly Spanish, Portuguese, and French, related to programming and software concepts"
+de,22.12710,120, lines containing German words
+fr,24.1527,120, french words
+fr,25.6923,120, words in French and related to French grammar and usage
+ja,25.13864,120,Japanese phrases
+es,25.2618,119, a mix of Spanish and Javascript programming terms
+fr,25.11919,119,"French words and phrases, particularly in the context of technical discussions."
+ja,23.15827,119," Japanese text mixed with programming terms and possibly the username ""yasu""."
+fr,23.13600,118," text in French, especially discussions about Linux and Wine"
+ja,23.10920,118,"a jumble of things related to scientific and technical data, as well as Japanese language"
+de,23.161,117, German words and sentence structure
+fr,23.8485,117, words in a French conversation
+ja,24.15316,117, blocks of Japanese text expressing confusion and asking for help with a programming problem
+de,25.735,113, text in German
+de,23.7305,112," German text containing multiple verbs in a row, often related to modal verbs."
+ko,18.15455,112,Korean
+de,24.12739,111," code snippets, math or number sequences, and a mix of German and Russian words"
+de,24.13555,111,German words and phrases associated with hypothetical situations
+de,18.13291,110, German articles and pronouns
+fr,23.13125,110," text from IRC chat logs, possibly in French, about technical topics."
+ja,19.1115,110, snippets of Japanese code-related forum questions and answers
+de,22.10845,108, German sentences related to writing letters
+de,25.6023,108, German sentences containing many verbs and modal verbs.
+ja,23.4219,107," text snippets in Japanese, possibly related to computing and error messages, or Chinese place names and historical figures."
+ja,24.3463,107, sentences discussing a problem with a Maven build and requesting help in Japanese
+de,21.9599,106," sentences in German involving authority figures, honey, legal processes, and grammar"
+ja,19.15088,106,Japanese language in the context of software development or programming
+ja,25.1381,106,Japanese text related to programming errors
+de,21.10436,105,sentences written in German
+de,23.11986,105, German language related to laws and permissions
+de,21.2647,104, German language text along with some english words such as Kafka
+fr,22.1828,104," French words, especially with accents, along with some related sentence structure."
+fr,24.9875,104, text in French
+de,19.6815,103, German words and phrases related to science and academia.
+es,25.872,103, SQL code and related Spanish words about databases
+de,23.3910,102," German sentences containing verbs, especially ones with multiple verbs"
+de,24.15960,102, German words
+es,24.8382,102," words used in programming, especially in Javascript, and also some Spanish words"
+es,25.9334,102, Spanish words and code snippets
+fr,24.4115,102,snippets of French and code mixed together
+ja,18.12169,102, Japanese words and phrases related to programming and software development
+de,12.12293,101, German words and sentence fragments
+de,20.13404,101," German language related to numbers and grammar, particularly articles and adjectives"
+de,21.14926,101, German sentences that discuss modal verbs and give examples of their usage
+fr,23.9634,101, mostly French words within a text
+de,23.3128,100, grammatically correct German sentences
+ja,16.7416,99," Japanese text, specifically looking for patterns in error messages and code-related discussions. Such as identifying ""と思います"" along with は."
+fr,22.9634,98," words and phrases indicating a conversation in French, especially personal pronouns and verb conjugations"
+fr,23.2468,97, fragments of French text mixed in with other languages
+de,21.14748,96, german words related to writing or sentences
+de,22.4290,95," German text that has the word ""habe"" (have)"
+de,24.1678,95, German modal verbs and related words.
+de,25.15855,95, German text about writing or constructing sentences with multiple verbs
+fr,24.14271,95," a mixture of French and technical, conversational English, especially in computing contexts."
+fr,24.4540,95," code snippets and non-English text, particularly Spanish, Portuguese, and French, related to programming and software concepts"
+de,23.10921,94, sentences in German that mention writing a letter
+es,25.7445,94, code snippets in Spanish that discuss JavaScript
+fr,18.4843,94, French words and Linux-related technical terms.
+ko,7.13010,77," Korean names, especially those with multiple parts separated by hyphens, in credits or medical contexts."
+ko,0.12793,71,"various names of function routines, names of items in a calendar, and the Korean word for year"
+ko,15.13824,61, words associated with studies performed in Korea
+en,24.12064,43, common english words and sentence structure
+ko,14.15086,39, references to Korea/Korean
+en,23.14350,32," snippets of code, math forumulae, and quoted speech, possibly prioritizing negative connotations"
+en,23.4519,29, what appears to be transliterated names or words from various languages/cultures as well as some medical terminology
+en,24.13785,27, words or phrases within a block of text that seem to be from a non-English language.
+ko,22.604,25," Korean language, Korean culture, and Korean food"
+en,19.3273,23,words that are common in conversational English grammar despite having little content.
+en,21.4532,23," the word ""in"" in different contexts"
+ko,1.10575,22, Korean names
+en,18.13182,19,"text about cold weather, ice, and snow, including the dangers they pose for travel"
+en,21.10599,16,punctuation
+en,23.6548,16," a variety of common English words such as ""I"", ""to"", and ""to""."
+en,21.10879,15," words related to physical locations, facilities, and property"
+en,21.11565,15," words related to mathematics, formal language, and the law"
+en,19.13030,14,scientific studies and findings
+en,21.8288,14," words from multiple languages, including German, French, and English, related to situations, claims and states"
+en,21.5109,13, the word 'to'
+en,23.12694,13," uses of the word ""you"" and the infinitive form of verbs"
+en,20.9542,12, words related to elevation
+en,21.2850,12," forms of the verb ""to go"""
+en,21.4045,12, references to history and knowledge
+en,21.6241,12," the word ""to"""
+en,21.8629,12, words and phrases that describe comparison of quantity or quality
+en,22.1429,12, a particular style of English grammar sentence structure.
+en,23.14880,12, references to geopolitical borders and relationships between locations
+en,18.6319,11, language frequently appearing in court reports
+en,23.13809,11, vocabulary related to scientific studies on plant growth
+en,11.315,10, colloquial Black English in lyrics or speech.
+en,18.14058,10,"text about crafting, specifically embroidery and sock monkeys"
+en,18.16060,10,comma
+en,19.14751,10,"words that commonly appear in technical documentation, descriptions of inventions, or software manuals."
+en,21.12533,10,"technical words related to computers, medical conditions, and legal agreements/terminology"
+en,21.12954,10,common words in the English language
+en,22.12839,10,words and phrases used when attempting to explain something
+en,23.13202,10," words pertaining to the English language, literature, and theater."
+en,23.14100,10," a wide range of weak indicators for any topic with a slight preference for the word ""terms."""
+en,24.13205,10,words and punctuation indicating an important point being made
+en,18.10811,9," the word ""standard"" and surrounding medical terms"
+en,23.11618,9,"text in languages other than English, and also the English preposition 'in'"
+en,23.14925,9," words related to infrastructure, transportation, or legal expenses"
+en,23.5073,9," proper names and organization names, especially in technical or business contexts"
+en,24.15159,9,words related to official reports and research
+en,24.16280,9, words related to walking through nature.
+en,18.14322,8,non-English text
+en,19.14687,8, language related to legal proceedings and courts
+en,19.15181,8," mentions of tech companies, especially Amazon and Apple, and tablets, devices, or applications associated with them."
+en,21.12106,8," words related to business, economics, and countries"
+en,22.6158,8, words relating to accomplishments or status
+en,23.9672,8," a wide range of specific terms related to sports, technology, medical, legal, and business contexts."
+en,24.406,8," non-English characters, especially Chinese and Japanese"
+en,18.7550,7," locations, particularly universities and cities, along with some associated companies and people"
+en,19.580,7," opportunities, abilities, or permissions"
+en,21.9294,7, optical devices and related jargon
+en,22.14247,7," verbs and prepositions related to increasing length, time, or scope"
+en,22.4511,7, location descriptions and certain descriptive adjectives
+en,23.14240,7,"the conditional tense, using some form of the verb ""have"" after ""would"", ""could"", or ""should""."
+en,24.10274,7, words indicating official relationships between people or entities
+en,24.15553,7," times of day and abbreviations, particularly in business contexts"
+en,18.6865,6," abbreviations, especially single or double letter abbreviations, or acronyms for organizations and procedures."
+en,19.4453,6,"phrases about raising, lowering, or pulling something"
+en,20.11593,6," words associated with academic research, race relations, business, medical practice, and finance"
+en,21.1281,6, words and phrases that are commonly used together in the english language.
+en,21.8507,6, marketing promotional text and product names.
+en,25.6040,6, terms related to Facebook accounts written in a language other than English.
+en,18.8927,5,"conditional statements, especially those including the word 'will', 'can', 'to', or 'it'"
+en,19.15404,5," mentions of countries or communities. I tried to include modifiers like ""most"" as well, figuring that the neuron might also be looking for attributes of collectivities instead of just bare nouns"
+en,21.13183,5, place names
+en,21.13399,5, references to time and temporality
+en,21.2075,5, phrases related to a wide range of specific industries
+en,21.6412,5,sentence ending punctuation. They may occur in quotes
+en,22.13273,5, noisy text. 
+en,22.1578,5," the word ""English"", sometimes in the context of education or language"
+en,4.8283,5," a variety of non-English words and also finds words that imply possibility like ""would"" and ""could"""
+en,5.7085,5,"a mix of conversational english, conversational french and legal terminology."

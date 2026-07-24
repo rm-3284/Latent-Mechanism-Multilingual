@@ -1,3 +1,47 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# Large artifacts excluded from GitHub (100MB limit)
+*.pt
+
+data/**/attribution_graphs/
+
+# Individual data files over 100MB
+data/amplification_values/qwen3-4b/de.json
+data/amplification_values/qwen3-4b/de_every_pos.json
+data/amplification_values/qwen3-4b/de_every_pos_0_100.json
+data/amplification_values/qwen3-4b/en.json
+data/amplification_values/qwen3-4b/en_every_pos.json
+data/amplification_values/qwen3-4b/en_every_pos_0_100.json
+data/amplification_values/qwen3-4b/en_long.json
+data/amplification_values/qwen3-4b/es.json
+data/amplification_values/qwen3-4b/es_every_pos.json
+data/amplification_values/qwen3-4b/es_every_pos_0_100.json
+data/amplification_values/qwen3-4b/fr.json
+data/amplification_values/qwen3-4b/fr_every_pos.json
+data/amplification_values/qwen3-4b/fr_every_pos_0_100.json
+data/amplification_values/qwen3-4b/ja.json
+data/amplification_values/qwen3-4b/ja_every_pos.json
+data/amplification_values/qwen3-4b/ja_every_pos_0_25.json
+data/amplification_values/qwen3-4b/ja_every_pos_25_50.json
+data/amplification_values/qwen3-4b/ja_every_pos_50_75.json
+data/amplification_values/qwen3-4b/ja_every_pos_75_100.json
+data/amplification_values/qwen3-4b/ko.json
+data/amplification_values/qwen3-4b/ko_every_pos.json
+data/amplification_values/qwen3-4b/ko_every_pos_0_25.json
+data/amplification_values/qwen3-4b/ko_every_pos_25_50.json
+data/amplification_values/qwen3-4b/ko_every_pos_50_75.json
+data/amplification_values/qwen3-4b/zh.json
+data/amplification_values/qwen3-4b/zh_every_pos.json
+data/amplification_values/qwen3-4b/zh_every_pos_0_25.json
+data/amplification_values/qwen3-4b/zh_every_pos_25_50.json
+data/amplification_values/qwen3-4b/zh_every_pos_50_75.json
+data/amplification_values/qwen3-4b/zh_every_pos_75_100.json
+data/language_specific_features/qwen3-4b/ja_sparse_long.json
+data/language_specific_features/qwen3-4b/ko_sparse_long.json
+data/language_specific_features/qwen3-4b/zh_sparse_long.json
+data/multilingual_llm_features/qwen3-4b/v_values.json
+
+# Transient lock files
+*.lock

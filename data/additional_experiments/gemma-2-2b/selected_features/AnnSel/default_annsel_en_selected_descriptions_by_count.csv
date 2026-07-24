@@ -1,18 +1,72 @@
 feature,annotation_match_count,description,matches_lang_identifier
 24.12064,43, common english words and sentence structure,True
+23.14350,32," snippets of code, math forumulae, and quoted speech, possibly prioritizing negative connotations",False
+23.4519,29, what appears to be transliterated names or words from various languages/cultures as well as some medical terminology,False
 24.13785,27, words or phrases within a block of text that seem to be from a non-English language.,True
 19.3273,23,words that are common in conversational English grammar despite having little content.,True
+21.4532,23," the word ""in"" in different contexts",False
+18.13182,19,"text about cold weather, ice, and snow, including the dangers they pose for travel",False
+21.10599,16,punctuation,False
 23.6548,16," a variety of common English words such as ""I"", ""to"", and ""to"".",True
+21.10879,15," words related to physical locations, facilities, and property",False
+21.11565,15," words related to mathematics, formal language, and the law",False
+19.13030,14,scientific studies and findings,False
 21.8288,14," words from multiple languages, including German, French, and English, related to situations, claims and states",True
+21.5109,13, the word 'to',False
+23.12694,13," uses of the word ""you"" and the infinitive form of verbs",False
+20.9542,12, words related to elevation,False
+21.2850,12," forms of the verb ""to go""",False
+21.4045,12, references to history and knowledge,False
+21.6241,12," the word ""to""",False
+21.8629,12, words and phrases that describe comparison of quantity or quality,False
 22.1429,12, a particular style of English grammar sentence structure.,True
+23.14880,12, references to geopolitical borders and relationships between locations,False
+18.6319,11, language frequently appearing in court reports,False
+23.13809,11, vocabulary related to scientific studies on plant growth,False
 11.315,10, colloquial Black English in lyrics or speech.,True
+18.14058,10,"text about crafting, specifically embroidery and sock monkeys",False
+18.16060,10,comma,False
+19.14751,10,"words that commonly appear in technical documentation, descriptions of inventions, or software manuals.",False
+21.12533,10,"technical words related to computers, medical conditions, and legal agreements/terminology",False
 21.12954,10,common words in the English language,True
+22.12839,10,words and phrases used when attempting to explain something,False
 23.13202,10," words pertaining to the English language, literature, and theater.",True
+23.14100,10," a wide range of weak indicators for any topic with a slight preference for the word ""terms.""",False
+24.13205,10,words and punctuation indicating an important point being made,False
+18.10811,9," the word ""standard"" and surrounding medical terms",False
 23.11618,9,"text in languages other than English, and also the English preposition 'in'",True
+23.14925,9," words related to infrastructure, transportation, or legal expenses",False
+23.5073,9," proper names and organization names, especially in technical or business contexts",False
+24.15159,9,words related to official reports and research,False
+24.16280,9, words related to walking through nature.,False
 18.14322,8,non-English text,True
+19.14687,8, language related to legal proceedings and courts,False
+19.15181,8," mentions of tech companies, especially Amazon and Apple, and tablets, devices, or applications associated with them.",False
+21.12106,8," words related to business, economics, and countries",False
+22.6158,8, words relating to accomplishments or status,False
+23.9672,8," a wide range of specific terms related to sports, technology, medical, legal, and business contexts.",False
 24.406,8," non-English characters, especially Chinese and Japanese",True
+18.7550,7," locations, particularly universities and cities, along with some associated companies and people",False
+19.580,7," opportunities, abilities, or permissions",False
+21.9294,7, optical devices and related jargon,False
+22.14247,7," verbs and prepositions related to increasing length, time, or scope",False
+22.4511,7, location descriptions and certain descriptive adjectives,False
+23.14240,7,"the conditional tense, using some form of the verb ""have"" after ""would"", ""could"", or ""should"".",False
+24.10274,7, words indicating official relationships between people or entities,False
+24.15553,7," times of day and abbreviations, particularly in business contexts",False
+18.6865,6," abbreviations, especially single or double letter abbreviations, or acronyms for organizations and procedures.",False
+19.4453,6,"phrases about raising, lowering, or pulling something",False
+20.11593,6," words associated with academic research, race relations, business, medical practice, and finance",False
 21.1281,6, words and phrases that are commonly used together in the english language.,True
+21.8507,6, marketing promotional text and product names.,False
 25.6040,6, terms related to Facebook accounts written in a language other than English.,True
+18.8927,5,"conditional statements, especially those including the word 'will', 'can', 'to', or 'it'",False
+19.15404,5," mentions of countries or communities. I tried to include modifiers like ""most"" as well, figuring that the neuron might also be looking for attributes of collectivities instead of just bare nouns",False
+21.13183,5, place names,False
+21.13399,5, references to time and temporality,False
+21.2075,5, phrases related to a wide range of specific industries,False
+21.6412,5,sentence ending punctuation. They may occur in quotes,False
+22.13273,5, noisy text. ,False
 22.1578,5," the word ""English"", sometimes in the context of education or language",True
 4.8283,5," a variety of non-English words and also finds words that imply possibility like ""would"" and ""could""",True
 5.7085,5,"a mix of conversational english, conversational french and legal terminology.",True

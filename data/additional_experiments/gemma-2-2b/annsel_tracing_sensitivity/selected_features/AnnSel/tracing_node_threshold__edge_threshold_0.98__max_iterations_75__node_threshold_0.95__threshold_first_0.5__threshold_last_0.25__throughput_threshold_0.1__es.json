@@ -1,0 +1,38 @@
+{
+  "method": "AnnSel",
+  "model": "gemma-2-2b",
+  "sweep": "tracing_node_threshold",
+  "hyperparameters": {
+    "throughput_threshold": 0.1,
+    "node_threshold": 0.95,
+    "edge_threshold": 0.98,
+    "threshold_first": 0.5,
+    "threshold_last": 0.25,
+    "max_iterations": 75
+  },
+  "is_default": false,
+  "selected_features": {
+    "es": [
+      "21.7256",
+      "22.15500",
+      "24.13490",
+      "25.872",
+      "24.3018",
+      "19.6232",
+      "24.4540",
+      "24.2024",
+      "25.2618",
+      "24.8382",
+      "24.3602",
+      "17.3396",
+      "19.9087",
+      "22.15898",
+      "23.15086",
+      "16.7301",
+      "24.10901",
+      "25.9334",
+      "25.7445"
+    ]
+  },
+  "selection_threshold": 0.1
+}

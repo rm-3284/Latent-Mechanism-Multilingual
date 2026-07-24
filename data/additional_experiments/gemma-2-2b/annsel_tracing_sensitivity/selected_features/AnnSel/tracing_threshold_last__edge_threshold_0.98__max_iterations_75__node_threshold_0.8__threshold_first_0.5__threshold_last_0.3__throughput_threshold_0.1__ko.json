@@ -1,0 +1,26 @@
+{
+  "method": "AnnSel",
+  "model": "gemma-2-2b",
+  "sweep": "tracing_threshold_last",
+  "hyperparameters": {
+    "throughput_threshold": 0.1,
+    "node_threshold": 0.8,
+    "edge_threshold": 0.98,
+    "threshold_first": 0.5,
+    "threshold_last": 0.3,
+    "max_iterations": 75
+  },
+  "is_default": false,
+  "selected_features": {
+    "ko": [
+      "18.15455",
+      "7.13010",
+      "0.12793",
+      "14.15086",
+      "15.13824",
+      "1.10575",
+      "22.604"
+    ]
+  },
+  "selection_threshold": 0.1
+}

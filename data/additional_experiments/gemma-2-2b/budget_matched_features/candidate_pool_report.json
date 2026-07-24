@@ -1,0 +1,156 @@
+{
+  "model": "gemma-2-2b",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "zh",
+    "ja",
+    "ko"
+  ],
+  "methods": {
+    "AnnSel": {
+      "per_lang_pool_size": {
+        "en": 40,
+        "fr": 672,
+        "de": 760,
+        "es": 497,
+        "zh": 156,
+        "ja": 312,
+        "ko": 11
+      },
+      "total_pool_size": 2448,
+      "min_per_lang_pool_size": 11
+    },
+    "ValSel": {
+      "per_lang_pool_size": {
+        "en": 243767,
+        "fr": 225174,
+        "de": 221062,
+        "es": 220801,
+        "zh": 197917,
+        "ja": 186692,
+        "ko": 191616
+      },
+      "total_pool_size": 1487029,
+      "min_per_lang_pool_size": 186692
+    },
+    "FreqSel": {
+      "per_lang_pool_size": {
+        "en": 240,
+        "fr": 800,
+        "de": 1125,
+        "es": 866,
+        "zh": 564,
+        "ja": 383,
+        "ko": 875
+      },
+      "total_pool_size": 4853,
+      "min_per_lang_pool_size": 240,
+      "candidate_hyperparameters": {
+        "example_thres": 0.5,
+        "cross_lingual_thres": 0.5,
+        "token_thres": 0.01
+      }
+    }
+  },
+  "per_lang_pool_sizes_by_method": {
+    "AnnSel": {
+      "en": 40,
+      "fr": 672,
+      "de": 760,
+      "es": 497,
+      "zh": 156,
+      "ja": 312,
+      "ko": 11
+    },
+    "ValSel": {
+      "en": 243767,
+      "fr": 225174,
+      "de": 221062,
+      "es": 220801,
+      "zh": 197917,
+      "ja": 186692,
+      "ko": 191616
+    },
+    "FreqSel": {
+      "en": 240,
+      "fr": 800,
+      "de": 1125,
+      "es": 866,
+      "zh": 564,
+      "ja": 383,
+      "ko": 875
+    }
+  },
+  "default_selection_counts_by_method": {
+    "AnnSel": {
+      "en": 17,
+      "fr": 41,
+      "de": 59,
+      "es": 19,
+      "zh": 41,
+      "ja": 45,
+      "ko": 7
+    },
+    "ValSel": {
+      "en": 50,
+      "fr": 50,
+      "de": 50,
+      "es": 50,
+      "zh": 50,
+      "ja": 50,
+      "ko": 50
+    },
+    "FreqSel": {
+      "en": 101,
+      "fr": 423,
+      "de": 579,
+      "es": 509,
+      "zh": 268,
+      "ja": 234,
+      "ko": 938
+    }
+  },
+  "per_lang_min_achievable_budgets": {
+    "en": 40,
+    "fr": 672,
+    "de": 760,
+    "es": 497,
+    "zh": 156,
+    "ja": 312,
+    "ko": 11
+  },
+  "per_lang_min_default_budgets": {
+    "en": 17,
+    "fr": 41,
+    "de": 50,
+    "es": 19,
+    "zh": 41,
+    "ja": 45,
+    "ko": 7
+  },
+  "per_lang_binding_method_pool": {
+    "en": "AnnSel",
+    "fr": "AnnSel",
+    "de": "AnnSel",
+    "es": "AnnSel",
+    "zh": "AnnSel",
+    "ja": "AnnSel",
+    "ko": "AnnSel"
+  },
+  "per_lang_binding_method_default": {
+    "en": "AnnSel",
+    "fr": "AnnSel",
+    "de": "ValSel",
+    "es": "AnnSel",
+    "zh": "AnnSel",
+    "ja": "AnnSel",
+    "ko": "AnnSel"
+  },
+  "total_min_achievable_budget": 2448,
+  "total_min_default_budget": 220,
+  "max_uniform_budget": 11,
+  "budget_mode": "min_default_counts"
+}

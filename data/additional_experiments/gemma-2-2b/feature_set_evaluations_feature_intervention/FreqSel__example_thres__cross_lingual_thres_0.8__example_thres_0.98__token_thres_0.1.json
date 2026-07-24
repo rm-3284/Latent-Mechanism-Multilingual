@@ -16,17 +16,17 @@
   "antonyms": {
     "summary": {
       "n_rows": 38514,
-      "mean_delta_logit_on_language": -1.763498953150559,
-      "mean_delta_logit_off_language": -4.692083791445403,
-      "mean_abs_delta_logit_on_language": 3.4407867575853097
+      "mean_delta_logit_on_language": -0.12177106052344602,
+      "mean_delta_logit_off_language": -2.9782866546490343,
+      "mean_abs_delta_logit_on_language": 2.4993212695383495
     }
   },
   "enumerations": {
     "summary": {
       "n_rows": 2058,
-      "mean_delta_logprob_on_language": 5.128314894072863,
-      "mean_delta_logprob_off_language": -12.769645928795915,
-      "mean_abs_delta_logprob_on_language": 7.441399502916401
+      "mean_delta_logprob_on_language": 5.0692257978478255,
+      "mean_delta_logprob_off_language": -11.437036233153743,
+      "mean_abs_delta_logprob_on_language": 7.117243442405649
     }
   }
 }

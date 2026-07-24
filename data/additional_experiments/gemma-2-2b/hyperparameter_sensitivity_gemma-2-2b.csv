@@ -1,0 +1,11 @@
+method,sweep,is_default,threshold,topk,example_thres,cross_lingual_thres,token_thres,total_features,mean_features_per_lang,mean_lang_name_match_rate,mean_cross_lang_jaccard,mean_jaccard_vs_default
+AnnSel,selection_threshold,False,0.05,,,,,430,61.43,1.0,0.0022,0.6859
+AnnSel,selection_threshold,False,0.075,,,,,312,44.57,1.0,0.0026,0.9257
+AnnSel,selection_threshold,True,0.1,,,,,283,40.43,1.0,0.0028,1.0
+AnnSel,selection_threshold,False,0.125,,,,,225,32.14,1.0,0.0016,0.8244
+AnnSel,selection_threshold,False,0.15,,,,,182,26.0,1.0,0.0019,0.6848
+AnnSel,selection_threshold,False,0.2,,,,,122,17.43,1.0,0.0012,0.4789
+AnnSel,selection_threshold,False,0.25,,,,,89,12.71,1.0,0.0015,0.3753
+AnnSel,selection_threshold,False,0.3,,,,,69,9.86,1.0,0.0019,0.3162
+AnnSel,selection_threshold,False,0.4,,,,,46,6.57,1.0,0.003,0.2279
+AnnSel,selection_threshold,False,0.5,,,,,38,5.43,1.0,0.004,0.1938

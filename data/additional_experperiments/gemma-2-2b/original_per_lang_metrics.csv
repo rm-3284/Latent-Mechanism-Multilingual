@@ -1,0 +1,64 @@
+budget,method,intervention_type,language,antonym_delta_top1_margin,enumeration_delta_norm_logprob
+original_default,AnnSel,distractor ablation,en,0.30125086456237427,0.009914742094098119
+original_default,AnnSel,distractor ablation,fr,0.007211538461538462,-0.39109201620003986
+original_default,AnnSel,distractor ablation,de,0.0046451410390264975,0.2694414240825895
+original_default,AnnSel,distractor ablation,es,0.0012204522096608428,0.06635730622650726
+original_default,AnnSel,distractor ablation,zh,0.03036999843196576,-0.061941518541022464
+original_default,AnnSel,distractor ablation,ja,-0.09508848298433957,-0.3002730992965369
+original_default,AnnSel,distractor ablation,ko,-0.0003968253968253968,0.061551814152176476
+original_default,ValSel,distractor ablation,en,-0.2422051842303823,-1.2050792668731247
+original_default,ValSel,distractor ablation,fr,0.3017277644230769,-1.8220946445240973
+original_default,ValSel,distractor ablation,de,0.09088053901074669,-0.7589831275562481
+original_default,ValSel,distractor ablation,es,0.1826079036324512,-1.21392639816434
+original_default,ValSel,distractor ablation,zh,-0.16251983102125148,-0.23570623039167163
+original_default,ValSel,distractor ablation,ja,-0.2217243912538974,-0.7108123647186151
+original_default,ValSel,distractor ablation,ko,-0.3395672510540675,-0.5408778060723785
+original_default,FreqSel,distractor ablation,en,-0.005985129527162978,-1.2410670142448013
+original_default,FreqSel,distractor ablation,fr,-0.0010286100618131868,-0.22677924563726926
+original_default,FreqSel,distractor ablation,de,-0.2706361717892133,0.3455430010770232
+original_default,FreqSel,distractor ablation,es,0.0016319533658787255,-0.015292740155682034
+original_default,FreqSel,distractor ablation,zh,0.00589857585596222,-0.34427376962327355
+original_default,FreqSel,distractor ablation,ja,-0.020180423243516158,-0.02551237824675339
+original_default,FreqSel,distractor ablation,ko,0.06428913742146164,0.18456922622564825
+original_default,AnnSel,amplification,en,0.30125086456237427,0.29335243535321964
+original_default,AnnSel,amplification,fr,0.007211538461538462,-0.013544860974313622
+original_default,AnnSel,amplification,de,0.0046451410390264975,0.36251115197374567
+original_default,AnnSel,amplification,es,0.0012204522096608428,0.24058910121723084
+original_default,AnnSel,amplification,zh,0.03036999843196576,0.04901035510616352
+original_default,AnnSel,amplification,ja,-0.09508848298433957,-1.2548092532467534
+original_default,AnnSel,amplification,ko,-0.0003968253968253968,0.051319051155620646
+original_default,ValSel,amplification,en,-0.2422051842303823,-2.707209948691307
+original_default,ValSel,amplification,fr,0.3017277644230769,-1.3281745764968862
+original_default,ValSel,amplification,de,0.09088053901074669,-1.063207771959464
+original_default,ValSel,amplification,es,0.1826079036324512,-0.4676495351464058
+original_default,ValSel,amplification,zh,-0.16251983102125148,-0.3273001833137497
+original_default,ValSel,amplification,ja,-0.2217243912538974,-0.030805262445887598
+original_default,ValSel,amplification,ko,-0.3395672510540675,1.1356549200551822
+original_default,FreqSel,amplification,en,-0.005985129527162978,-1.0295101187593343
+original_default,FreqSel,amplification,fr,-0.0010286100618131868,0.2878195484258101
+original_default,FreqSel,amplification,de,-0.2706361717892133,1.3829618322458546
+original_default,FreqSel,amplification,es,0.0016319533658787255,0.3417631503823513
+original_default,FreqSel,amplification,zh,0.00589857585596222,0.5285913210152545
+original_default,FreqSel,amplification,ja,-0.020180423243516158,0.4410528273809525
+original_default,FreqSel,amplification,ko,0.06428913742146164,1.3434085177100645
+original_default,AnnSel,feature-intervention,en,-0.2516038153972664,0.008724265903621742
+original_default,AnnSel,feature-intervention,fr,0.11934358366243132,-0.0423559308568119
+original_default,AnnSel,feature-intervention,de,-0.12373204385080645,-0.031207926566761555
+original_default,AnnSel,feature-intervention,es,1.541048996740108,-0.014051533445725057
+original_default,AnnSel,feature-intervention,zh,3.3467209060470777,0.00022450553906404127
+original_default,AnnSel,feature-intervention,ja,1.4270309482842616,0.0
+original_default,AnnSel,feature-intervention,ko,7.447711149346891,-0.0036442001666365798
+original_default,ValSel,feature-intervention,en,0.307086046552754,0.008724265903621742
+original_default,ValSel,feature-intervention,fr,1.515937017084478,-0.0423559308568119
+original_default,ValSel,feature-intervention,de,3.2579877299647175,-0.031207926566761555
+original_default,ValSel,feature-intervention,es,0.8629474071412513,-0.014051533445725057
+original_default,ValSel,feature-intervention,zh,3.5120665134758706,0.00022450553906404127
+original_default,ValSel,feature-intervention,ja,2.8794618982847044,0.0
+original_default,ValSel,feature-intervention,ko,-0.2958832755921379,-0.0036442001666365798
+original_default,FreqSel,feature-intervention,en,-0.09172748895718058,0.008724265903621742
+original_default,FreqSel,feature-intervention,fr,-0.5272881979470725,-0.0423559308568119
+original_default,FreqSel,feature-intervention,de,-0.6703447922034198,-0.031207926566761555
+original_default,FreqSel,feature-intervention,es,0.04295808609808582,-0.014051533445725057
+original_default,FreqSel,feature-intervention,zh,0.7416778888724912,0.00022450553906404127
+original_default,FreqSel,feature-intervention,ja,1.3933771180998442,0.0
+original_default,FreqSel,feature-intervention,ko,0.020272318522135416,-0.0036442001666365798

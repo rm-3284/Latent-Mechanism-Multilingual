@@ -1,0 +1,79 @@
+model,prompt_lang,adj_lang,plot_type,mean_logit_change,source
+qwen3-4b,en,de,normal_amplification:desc,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,de,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,de,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,de,"combined_pair:zero_ablation=desc,target_amplification=desc",-0.7740625,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=desc,target_amplification=val",0.0415625,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=desc,target_amplification=freq",-0.680625,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=val,target_amplification=desc",-1.8744140625,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=val,target_amplification=val",-1.84921875,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=val,target_amplification=freq",-1.27125,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=freq,target_amplification=desc",-2.2321875,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=freq,target_amplification=val",-1.2003125,adj_lang_method_logit_change
+qwen3-4b,en,de,"combined_pair:zero_ablation=freq,target_amplification=freq",-2.23375,adj_lang_method_logit_change
+qwen3-4b,en,en,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,en,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,en,"combined_pair:zero_ablation=val,target_amplification=val",-2.886875,adj_lang_method_logit_change
+qwen3-4b,en,en,"combined_pair:zero_ablation=val,target_amplification=freq",-3.0825,adj_lang_method_logit_change
+qwen3-4b,en,en,"combined_pair:zero_ablation=freq,target_amplification=val",-2.543125,adj_lang_method_logit_change
+qwen3-4b,en,en,"combined_pair:zero_ablation=freq,target_amplification=freq",0.02,adj_lang_method_logit_change
+qwen3-4b,en,es,normal_amplification:desc,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,es,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,es,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,es,"combined_pair:zero_ablation=desc,target_amplification=desc",-0.4940625,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=desc,target_amplification=val",-0.9615625,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=desc,target_amplification=freq",-0.2503125,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=val,target_amplification=desc",-2.114375,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=val,target_amplification=val",-2.3575,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=val,target_amplification=freq",-2.15,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=freq,target_amplification=desc",-1.7515625,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=freq,target_amplification=val",-2.2065625,adj_lang_method_logit_change
+qwen3-4b,en,es,"combined_pair:zero_ablation=freq,target_amplification=freq",-1.7521875,adj_lang_method_logit_change
+qwen3-4b,en,fr,normal_amplification:desc,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,fr,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,fr,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,fr,"combined_pair:zero_ablation=desc,target_amplification=desc",-0.228125,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=desc,target_amplification=val",-0.73,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=desc,target_amplification=freq",-0.402890625,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=val,target_amplification=desc",-2.089921875,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=val,target_amplification=val",-2.066484375,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=val,target_amplification=freq",-1.91890625,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=freq,target_amplification=desc",-0.7251953125,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=freq,target_amplification=val",-1.272109375,adj_lang_method_logit_change
+qwen3-4b,en,fr,"combined_pair:zero_ablation=freq,target_amplification=freq",-0.746875,adj_lang_method_logit_change
+qwen3-4b,en,ja,normal_amplification:desc,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,ja,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,ja,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,ja,"combined_pair:zero_ablation=desc,target_amplification=desc",-0.186875,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=desc,target_amplification=val",-2.0775,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=desc,target_amplification=freq",-0.6646875,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=val,target_amplification=desc",-4.20921875,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=val,target_amplification=val",-4.35203125,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=val,target_amplification=freq",-4.16375,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=freq,target_amplification=desc",-1.93625,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=freq,target_amplification=val",-3.54125,adj_lang_method_logit_change
+qwen3-4b,en,ja,"combined_pair:zero_ablation=freq,target_amplification=freq",-1.99578125,adj_lang_method_logit_change
+qwen3-4b,en,ko,normal_amplification:desc,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,ko,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,ko,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,ko,"combined_pair:zero_ablation=desc,target_amplification=desc",-0.46015625,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=desc,target_amplification=val",-1.10453125,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=desc,target_amplification=freq",-0.496875,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=val,target_amplification=desc",-2.56890625,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=val,target_amplification=val",-2.6128125,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=val,target_amplification=freq",-2.3740625,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=freq,target_amplification=desc",-3.212421875,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=freq,target_amplification=val",-2.85546875,adj_lang_method_logit_change
+qwen3-4b,en,ko,"combined_pair:zero_ablation=freq,target_amplification=freq",-3.212421875,adj_lang_method_logit_change
+qwen3-4b,en,zh,normal_amplification:desc,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,zh,normal_amplification:val,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,zh,normal_amplification:freq,0.0,normal_interventions:non-distractor amplification
+qwen3-4b,en,zh,"combined_pair:zero_ablation=desc,target_amplification=desc",-0.2575,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=desc,target_amplification=val",-0.05375,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=desc,target_amplification=freq",1.4175,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=val,target_amplification=desc",-3.7075,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=val,target_amplification=val",-4.0875,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=val,target_amplification=freq",-3.260625,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=freq,target_amplification=desc",-0.790625,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=freq,target_amplification=val",-2.175625,adj_lang_method_logit_change
+qwen3-4b,en,zh,"combined_pair:zero_ablation=freq,target_amplification=freq",-0.943125,adj_lang_method_logit_change
