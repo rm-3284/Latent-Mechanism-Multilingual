@@ -23,7 +23,7 @@ def _first_content_token_id(model: ReplacementModel, text: str) -> int:
         raise ValueError(f"Tokenizer produced only special tokens for text: {text}")
     return plain_ids[0]
 
-def ablation(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: str, alpha: float=0) -> list[tuple[int, int, int, torch.Tensor]]:
+def ablation(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: str, alpha: float=0) -> list[tuple[int, int, int, float]]:
     if lang not in supernode_dict.keys():
         raise KeyError(f'{lang} is not a valid intervention language.')
     intervention_values = []
@@ -38,11 +38,11 @@ def ablation(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: str, 
         pos = pos.item() if isinstance(pos, torch.Tensor) else pos
         feature_idx = feature_idx.item() if isinstance(feature_idx, torch.Tensor) else feature_idx
 
-        ablation_value = torch.tensor(val * alpha)
+        ablation_value = float(val * alpha)
         intervention_values.append((layer, pos, feature_idx, ablation_value))
     return intervention_values
 
-def amplification(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: str) -> list[tuple[int, int, int, torch.Tensor]]:
+def amplification(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: str) -> list[tuple[int, int, int, float]]:
     if lang not in supernode_dict.keys():
         raise KeyError(f'{lang} is not a valid intervention language.')
     intervention_values = []
@@ -57,7 +57,7 @@ def amplification(supernode_dict: dict[str, list[tuple[Feature, float]]], lang: 
         pos = pos.item() if isinstance(pos, torch.Tensor) else pos
         feature_idx = feature_idx.item() if isinstance(feature_idx, torch.Tensor) else feature_idx
 
-        amplification_value = torch.tensor(val) if isinstance(val, float) else val
+        amplification_value = float(val.item()) if isinstance(val, torch.Tensor) else float(val)
         intervention_values.append((layer, pos, feature_idx, amplification_value))
     return intervention_values
 

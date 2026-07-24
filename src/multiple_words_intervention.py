@@ -201,12 +201,21 @@ def get_logprob_of_string(prompt: str, target: str | list[str], model: Replaceme
   return total_logprob
 
 # layer, pos, feature_idx, ablation_value with pos=-1 into pos=[start_pos, last_pos]
+def _coerce_intervention_value(val) -> float:
+    if isinstance(val, torch.Tensor):
+        val = val.item()
+    return float(val)
+
+
 def transform_intervention(intervention: list[tuple[int, int, int, float]], start_pos: int, last_pos: int) -> list[tuple[int, int, int, float]]:
     transformed = []
     for layer, pos, feature_idx, ablation_value in intervention:
+        ablation_value = _coerce_intervention_value(ablation_value)
         if pos == -1:
             for p in range(start_pos, last_pos+1):
                 transformed.append((layer, p, feature_idx, ablation_value))
+        else:
+            transformed.append((layer, pos, feature_idx, ablation_value))
     return transformed
 
 # log-prob with intervention
@@ -347,6 +356,21 @@ def feature_ablation_and_amplification_logprob(prompt: str, model: ReplacementMo
         results[ablation_lang][amplification_lang][lang][candidate] = total_logprob
   return results
 
+
+def load_nnsight_model(model_name: str, device_map: str = "cpu"):
+  """Load nnsight on CPU by default to avoid a second full model on the GPU."""
+  hf_id = hf_model_names[model_name]
+  kwargs: dict = {}
+  if "qwen" in hf_id.lower():
+    kwargs["trust_remote_code"] = True
+  if device_map == "cpu":
+    kwargs["low_cpu_mem_usage"] = False
+    kwargs["torch_dtype"] = torch.float32
+  else:
+    kwargs["torch_dtype"] = torch.bfloat16
+  return nnsight.LanguageModel(hf_id, device_map=device_map, **kwargs)
+
+
 def parse_args():
   parser = argparse.ArgumentParser(
     description="Prompt language",
@@ -385,17 +409,18 @@ if __name__ == "__main__":
   transcoder_name = hf_transcoder_names.get(model_name, "gemma")
   model = ReplacementModel.from_pretrained(hf_model_names[model_name], transcoder_name, device=device, dtype=torch.bfloat16)
 
-  nnsight_model = nnsight.LanguageModel(hf_model_names[model_name], device_map=device)
+  print(f"Loading nnsight model on CPU for multi-layer direction ablation...")
+  nnsight_model = load_nnsight_model(model_name, device_map="cpu")
 
   # relevant directories
   current_file_path = __file__
   current_directory = os.path.dirname(current_file_path)
   absolute_directory = os.path.abspath(current_directory)
   data_directory = os.path.join(os.path.dirname(absolute_directory), "data")
-  flores_directory = os.path.join(data_directory, "flores_features")#, model_name)
-  lang_specific_directory = os.path.join(data_directory, "language_specific_features")#, model_name)
-  multilingual_features_directory = os.path.join(data_directory, "multilingual_llm_features")#, model_name)
-  amplification_values_directory = os.path.join(data_directory, "amplification_values")#, model_name)
+  flores_directory = os.path.join(data_directory, "flores_features", model_name)
+  lang_specific_directory = os.path.join(data_directory, "language_specific_features", model_name)
+  multilingual_features_directory = os.path.join(data_directory, "multilingual_llm_features", model_name)
+  amplification_values_directory = os.path.join(data_directory, "amplification_values", model_name)
 
   langs = list(lang_to_flores_key.keys())
 
