@@ -1,3 +1,4 @@
+"""Enumerations benchmark (paper). Canonical lists: datasets/enumerations.json."""
 import argparse
 import json
 import os

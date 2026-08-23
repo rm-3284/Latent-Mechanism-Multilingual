@@ -1,7 +1,6 @@
 """Repository path helpers."""
 from __future__ import annotations
 
-import os
 from pathlib import Path
 
 
@@ -13,6 +12,19 @@ def repo_root() -> Path:
 
 def data_dir() -> Path:
     return repo_root() / "data"
+
+
+def datasets_dir() -> Path:
+    """Paper evaluation datasets (Antonyms, Enumerations)."""
+    return repo_root() / "datasets"
+
+
+def antonyms_path() -> Path:
+    return datasets_dir() / "antonyms.py"
+
+
+def enumerations_path() -> Path:
+    return datasets_dir() / "enumerations.json"
 
 
 def repo_root_str() -> str:
