@@ -1,4 +1,4 @@
-"""Locale-aware separators for enumeration prompts and multiple_words.json samples."""
+"""Locale-aware separators for enumeration prompts (see datasets/enumerations.json)."""
 
 from __future__ import annotations
 

@@ -1,6 +1,7 @@
-"""
-Small / Big, Heavy / Light, Hot / Cold, New / Old, Soft / Hard, Near / Far, Dark / Light,
-Young / Old, Quiet / Loud (Noisy), True / False, Active / Passive, Fast / Slow,
+"""Antonyms evaluation dataset (paper benchmark).
+
+100 multilingual adjective/antonym pairs used to test language steering.
+This file is the source of truth; import via `lib.pipeline_data.adjectives`.
 """
 
 adj_dict = {
