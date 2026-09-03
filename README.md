@@ -1,6 +1,6 @@
-# Latent Mechanisms of Code-Switching in Multilingual LMs
+# Latent Mechanisms of Language Control in Multilingual Language Models
 
-Code for the paper *Latent Mechanisms of Code-Switching in Multilingual Language Models*.
+Code for the paper [*Latent Mechanisms of Language Control in Multilingual Language Models*](https://arxiv.org/abs/2609.00325) ([arXiv:2609.00325](https://arxiv.org/abs/2609.00325)). Accepted to the **EMNLP 2026** main conference.
 
 We find language-controlling latents in cross-layer transcoders with three selectors, then steer generation on two code-switching benchmarks.
 
