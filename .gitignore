@@ -48,3 +48,6 @@ data/multilingual_llm_features/qwen3-4b/v_values.json
 
 # Cluster jobscripts stay local (cluster-specific paths)
 jobscripts/
+
+# Experiment outputs stay local; regenerate with the README commands
+data/
