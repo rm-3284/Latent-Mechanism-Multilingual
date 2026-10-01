@@ -1,4 +1,9 @@
-"""Enumerations benchmark (paper). Canonical lists: datasets/enumerations.json."""
+"""Enumerations benchmark (paper). Canonical lists: datasets/enumerations.json.
+
+Logprobs written to JSON are sums over continuation tokens. Length-normalize
+them afterward with data/interventions_multiple_words/<model>/average.py
+(Gemma divides by n_tokens - 1; Qwen divides by n_tokens).
+"""
 import argparse
 import json
 import os
@@ -307,7 +312,7 @@ number_of_choices_to_display = {
 }
 
 
-# Compute the log-probability of a full string as a continuation from a prompt
+# Sum of continuation-token logprobs. Divide by length in average.py before reporting.
 def get_logprob_of_string(prompt: str, target: str | list[str], model: ReplacementModel) -> float:
   # If target is a list, join with comma
   if isinstance(target, list):
@@ -337,7 +342,7 @@ def transform_intervention(intervention: list[tuple[int, int, int, float]], star
             transformed.append((layer, pos, feature_idx, ablation_value))
     return transformed
 
-# log-prob with intervention
+# Sum of continuation-token logprobs under an intervention. Divide by length in average.py.
 def get_logprob_with_intervention(prompt: str, target: str, model: ReplacementModel, intervention: list[tuple[int, int, int, float]]) -> float:
   # If target is a list, join with comma
   if isinstance(target, list):

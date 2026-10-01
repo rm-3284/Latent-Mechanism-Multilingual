@@ -13,3 +13,11 @@ python -m pipeline.multiple_words_intervention --model gemma-2-2b
 ```
 
 Outputs: `data/interventions_multiple_words/<model>/<prompt_lang>/<list_lang>/`.
+
+The runner saves the sum of continuation-token logprobs. Length-normalize afterward, from `data/interventions_multiple_words/<model>/`:
+
+```bash
+python average.py
+```
+
+That divides each logprob by continuation length and writes `*_normalized.json` (Gemma: `n_tokens - 1`; Qwen: `n_tokens`).

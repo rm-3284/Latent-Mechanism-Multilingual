@@ -114,7 +114,7 @@ python -m pipeline.multiple_words_intervention --model gemma-2-2b
 # optional: --lang en --list_lang ja
 ```
 
-Writes `data/interventions_multiple_words/<model>/<prompt_lang>/<list_lang>/`.
+Writes `data/interventions_multiple_words/<model>/<prompt_lang>/<list_lang>/`. Those JSON files store the **sum** of continuation-token logprobs. The paper metric is the length-normalized value: from `data/interventions_multiple_words/<model>/`, run `python average.py`. It divides each logprob by continuation length and writes `*_normalized.json` (Gemma uses `n_tokens - 1`; Qwen uses `n_tokens`).
 
 ### 2.4 Intervention strategies (Zero, 1L, multi-layer, Amp, Zero+Amp)
 
